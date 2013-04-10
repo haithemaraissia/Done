@@ -1,0 +1,1632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SidejobModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SidejobModelStoreContainer">
+          <EntitySet Name="AutomatedMessage" EntityType="SidejobModel.Store.AutomatedMessage" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AutomationEmailProblem" EntityType="SidejobModel.Store.AutomationEmailProblem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CanadaZipCode" EntityType="SidejobModel.Store.CanadaZipCode" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Categories" EntityType="SidejobModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoriesAr" EntityType="SidejobModel.Store.CategoriesAr" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoriesCn" EntityType="SidejobModel.Store.CategoriesCn" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoriesDe" EntityType="SidejobModel.Store.CategoriesDe" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoriesFr" EntityType="SidejobModel.Store.CategoriesFr" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoriesJa" EntityType="SidejobModel.Store.CategoriesJa" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoriesRu" EntityType="SidejobModel.Store.CategoriesRu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoriesSp" EntityType="SidejobModel.Store.CategoriesSp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CitiesUpdate" EntityType="SidejobModel.Store.CitiesUpdate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CountriesUpdate" EntityType="SidejobModel.Store.CountriesUpdate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CustomerGeneral" EntityType="SidejobModel.Store.CustomerGeneral" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DeniedCustomer" EntityType="SidejobModel.Store.DeniedCustomer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DeniedProfessional" EntityType="SidejobModel.Store.DeniedProfessional" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DeniedProject" EntityType="SidejobModel.Store.DeniedProject" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EmailSentException" EntityType="SidejobModel.Store.EmailSentException" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Jobs" EntityType="SidejobModel.Store.Jobs" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JobsAr" EntityType="SidejobModel.Store.JobsAr" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JobsCn" EntityType="SidejobModel.Store.JobsCn" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JobsDe" EntityType="SidejobModel.Store.JobsDe" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JobsFr" EntityType="SidejobModel.Store.JobsFr" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JobsJa" EntityType="SidejobModel.Store.JobsJa" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JobsRu" EntityType="SidejobModel.Store.JobsRu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JobsSp" EntityType="SidejobModel.Store.JobsSp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LockedCustomer" EntityType="SidejobModel.Store.LockedCustomer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LockedProfessional" EntityType="SidejobModel.Store.LockedProfessional" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LockedProject" EntityType="SidejobModel.Store.LockedProject" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PendingProject" EntityType="SidejobModel.Store.PendingProject" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProfessionalGeneral" EntityType="SidejobModel.Store.ProfessionalGeneral" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProjectRequirements" EntityType="SidejobModel.Store.ProjectRequirements" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Projects" EntityType="SidejobModel.Store.Projects" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="regionsUpdate" EntityType="SidejobModel.Store.regionsUpdate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="USAZipCode" EntityType="SidejobModel.Store.USAZipCode" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_CitiesUpdate_regionsUpdate" Association="SidejobModel.Store.FK_CitiesUpdate_regionsUpdate">
+            <End Role="regionsUpdate" EntitySet="regionsUpdate" />
+            <End Role="CitiesUpdate" EntitySet="CitiesUpdate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProjectRequirements_Projects" Association="SidejobModel.Store.FK_ProjectRequirements_Projects">
+            <End Role="Projects" EntitySet="Projects" />
+            <End Role="ProjectRequirements" EntitySet="ProjectRequirements" />
+          </AssociationSet>
+          <AssociationSet Name="FK_regionsUpdate_CountriesUpdate" Association="SidejobModel.Store.FK_regionsUpdate_CountriesUpdate">
+            <End Role="CountriesUpdate" EntitySet="CountriesUpdate" />
+            <End Role="regionsUpdate" EntitySet="regionsUpdate" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AutomatedMessage">
+          <Key>
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="MessageID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="256" />
+          <Property Name="Title" Type="nvarchar" MaxLength="20" />
+          <Property Name="Message" Type="ntext" />
+        </EntityType>
+        <EntityType Name="AutomationEmailProblem">
+          <Key>
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="MessageID" Type="int" Nullable="false" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="256" />
+          <Property Name="Title" Type="nvarchar" MaxLength="20" />
+          <Property Name="Message" Type="ntext" />
+        </EntityType>
+        <EntityType Name="CanadaZipCode">
+          <Key>
+            <PropertyRef Name="PostalCodeID" />
+          </Key>
+          <Property Name="PostalCodeID" Type="int" Nullable="false" />
+          <Property Name="PostalCode" Type="char" Nullable="false" MaxLength="7" />
+          <Property Name="City" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Province" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProvinceCode" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="Type" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="10" Scale="6" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="10" Scale="6" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CategoriesAr">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CategoriesCn">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CategoriesDe">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CategoriesFr">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CategoriesJa">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CategoriesRu">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CategoriesSp">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CitiesUpdate">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Name="CityId" Type="int" Nullable="false" />
+          <Property Name="CountryId" Type="int" Nullable="false" />
+          <Property Name="RegionId" Type="int" />
+          <Property Name="City" Type="varchar" MaxLength="128" />
+          <Property Name="Longitude" Type="float" />
+          <Property Name="Latitude" Type="float" />
+          <Property Name="TimeZone" Type="varchar" MaxLength="32" />
+          <Property Name="Code" Type="varchar" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="CountriesUpdate">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Name="CountryId" Type="int" Nullable="false" />
+          <Property Name="Country" Type="varchar" MaxLength="128" />
+          <Property Name="FIPS104" Type="varchar" MaxLength="2" />
+          <Property Name="ISO2" Type="varchar" MaxLength="2" />
+          <Property Name="ISO3" Type="varchar" MaxLength="3" />
+          <Property Name="ISON" Type="varchar" MaxLength="3" />
+          <Property Name="Internet" Type="varchar" MaxLength="2" />
+          <Property Name="Capital" Type="varchar" MaxLength="25" />
+          <Property Name="MapReference" Type="varchar" MaxLength="50" />
+          <Property Name="NationalitySingular" Type="varchar" MaxLength="35" />
+          <Property Name="NationalityPlural" Type="varchar" MaxLength="35" />
+          <Property Name="Currency" Type="varchar" MaxLength="30" />
+          <Property Name="CurrencyCode" Type="varchar" MaxLength="3" />
+          <Property Name="Population" Type="bigint" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="Comment" Type="varchar" MaxLength="2048" />
+          <Property Name="Path" Type="nvarchar" MaxLength="255" />
+          <Property Name="ContinentReference" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CustomerGeneral">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="RegionID" Type="int" Nullable="false" />
+          <Property Name="RegionName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="CityName" Type="varchar" MaxLength="128" />
+          <Property Name="Zipcode" Type="nvarchar" MaxLength="20" />
+          <Property Name="HomePhoneNumber" Type="nvarchar" MaxLength="24" />
+          <Property Name="MobilePhoneNumber" Type="nvarchar" MaxLength="24" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="Gender" Type="int" Nullable="false" />
+          <Property Name="EmailAddress" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="PhotoPath" Type="ntext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DeniedCustomer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="10" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="20" />
+          <Property Name="Country" Type="varchar" MaxLength="128" />
+          <Property Name="Region" Type="varchar" MaxLength="128" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Gender" Type="int" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="256" />
+          <Property Name="Date" Type="smalldatetime" />
+          <Property Name="CustomerId" Type="int" />
+        </EntityType>
+        <EntityType Name="DeniedProfessional">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="10" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="20" />
+          <Property Name="Country" Type="varchar" MaxLength="128" />
+          <Property Name="Region" Type="varchar" MaxLength="128" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Gender" Type="int" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="256" />
+          <Property Name="Date" Type="smalldatetime" />
+          <Property Name="ProId" Type="int" />
+        </EntityType>
+        <EntityType Name="DeniedProject">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectID" Type="bigint" />
+          <Property Name="LCID" Type="int" />
+          <Property Name="JobTitle" Type="nvarchar" MaxLength="100" />
+          <Property Name="ProjectTitle" Type="nvarchar" MaxLength="100" />
+          <Property Name="StartDate" Type="smalldatetime" />
+          <Property Name="EndDate" Type="smalldatetime" />
+          <Property Name="Description" Type="ntext" />
+          <Property Name="SpecialNotes" Type="ntext" />
+          <Property Name="Address" Type="nvarchar" MaxLength="60" />
+          <Property Name="DatePosted" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="EmailSentException">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DateTime" Type="smalldatetime" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="256" />
+          <Property Name="Reason" Type="nchar" MaxLength="10" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="UserRole" Type="char" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="Jobs">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JobCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsAr">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JobCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsCn">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JobCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsDe">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JobCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsFr">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JobCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsJa">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JobCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsRu">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JobCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsSp">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JobCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LockedCustomer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="10" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="20" />
+          <Property Name="Country" Type="varchar" MaxLength="128" />
+          <Property Name="Region" Type="varchar" MaxLength="128" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Gender" Type="int" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="256" />
+          <Property Name="Reason" Type="nvarchar(max)" />
+          <Property Name="Date" Type="smalldatetime" />
+          <Property Name="IP" Type="int" />
+          <Property Name="CustomerID" Type="int" />
+          <Property Name="ProjectID" Type="int" />
+        </EntityType>
+        <EntityType Name="LockedProfessional">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="10" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="20" />
+          <Property Name="Country" Type="varchar" MaxLength="128" />
+          <Property Name="Region" Type="varchar" MaxLength="128" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Gender" Type="int" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="256" />
+          <Property Name="Reason" Type="nvarchar(max)" />
+          <Property Name="Date" Type="smalldatetime" />
+          <Property Name="IP" Type="int" />
+          <Property Name="ProID" Type="int" />
+          <Property Name="ProjectID" Type="int" />
+        </EntityType>
+        <EntityType Name="LockedProject">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectID" Type="bigint" />
+          <Property Name="LCID" Type="int" />
+          <Property Name="JobTitle" Type="nvarchar" MaxLength="100" />
+          <Property Name="ProjectTitle" Type="nvarchar" MaxLength="100" />
+          <Property Name="StartDate" Type="smalldatetime" />
+          <Property Name="EndDate" Type="smalldatetime" />
+          <Property Name="Description" Type="ntext" />
+          <Property Name="SpecialNotes" Type="ntext" />
+          <Property Name="Address" Type="nvarchar" MaxLength="60" />
+          <Property Name="DatePosted" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="PendingProject">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="bigint" Nullable="false" />
+          <Property Name="LCID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ProjectTitle" Type="nvarchar" MaxLength="100" />
+          <Property Name="StartDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="EndDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="Description" Type="ntext" />
+          <Property Name="SpecialNotes" Type="ntext" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="DatePosted" Type="smalldatetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProfessionalGeneral">
+          <Key>
+            <PropertyRef Name="ProID" />
+          </Key>
+          <Property Name="ProID" Type="int" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="RegionID" Type="int" Nullable="false" />
+          <Property Name="RegionName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="CityName" Type="varchar" MaxLength="128" />
+          <Property Name="Zipcode" Type="nvarchar" Nullable="false" MaxLength="7" />
+          <Property Name="HomePhoneNumber" Type="nvarchar" MaxLength="24" />
+          <Property Name="MobilePhoneNumber" Type="nvarchar" MaxLength="24" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="Gender" Type="int" Nullable="false" />
+          <Property Name="EmailAddress" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="PhotoPath" Type="ntext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProjectRequirements">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="bigint" Nullable="false" />
+          <Property Name="LCID" Type="int" Nullable="false" />
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ExperienceID" Type="int" Nullable="false" />
+          <Property Name="CrewNumberID" Type="int" Nullable="false" />
+          <Property Name="LicensedID" Type="int" Nullable="false" />
+          <Property Name="InsuredID" Type="int" Nullable="false" />
+          <Property Name="RelocationID" Type="int" Nullable="false" />
+          <Property Name="ProjectTitle" Type="nvarchar" MaxLength="100" />
+          <Property Name="StartDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="EndDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="AmountOffered" Type="float" Nullable="false" />
+          <Property Name="CurrencyID" Type="int" Nullable="false" />
+          <Property Name="Description" Type="ntext" />
+          <Property Name="SpecialNotes" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="RegionID" Type="int" Nullable="false" />
+          <Property Name="RegionName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="CityName" Type="varchar" MaxLength="128" />
+          <Property Name="Zipcode" Type="nvarchar" MaxLength="7" />
+          <Property Name="DatePosted" Type="smalldatetime" Nullable="false" />
+          <Property Name="TimeLeft" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Projects">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PosterID" Type="int" Nullable="false" />
+          <Property Name="PosterRole" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="PosterUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="HighestBid" Type="float" />
+          <Property Name="HighestBidderID" Type="int" />
+          <Property Name="HighestBidUsername" Type="nvarchar" MaxLength="256" />
+          <Property Name="NumberofBids" Type="int" Nullable="false" />
+          <Property Name="Posted" Type="int" Nullable="false" />
+          <Property Name="StatusInt" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="regionsUpdate">
+          <Key>
+            <PropertyRef Name="RegionId" />
+          </Key>
+          <Property Name="RegionId" Type="int" Nullable="false" />
+          <Property Name="CountryId" Type="int" Nullable="false" />
+          <Property Name="Region" Type="varchar" MaxLength="128" />
+          <Property Name="Code" Type="varchar" MaxLength="2" />
+          <Property Name="ADM1Code" Type="varchar" MaxLength="4" />
+        </EntityType>
+        <EntityType Name="USAZipCode">
+          <Key>
+            <PropertyRef Name="PostalCodeID" />
+          </Key>
+          <Property Name="PostalCodeID" Type="int" Nullable="false" />
+          <Property Name="Latitude" Type="decimal" Precision="10" Scale="6" />
+          <Property Name="Longitude" Type="decimal" Precision="10" Scale="6" />
+          <Property Name="City" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="State" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="County" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Type" Type="char" Nullable="false" MaxLength="8" />
+        </EntityType>
+        <Association Name="FK_CitiesUpdate_regionsUpdate">
+          <End Role="regionsUpdate" Type="SidejobModel.Store.regionsUpdate" Multiplicity="0..1" />
+          <End Role="CitiesUpdate" Type="SidejobModel.Store.CitiesUpdate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="regionsUpdate">
+              <PropertyRef Name="RegionId" />
+            </Principal>
+            <Dependent Role="CitiesUpdate">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProjectRequirements_Projects">
+          <End Role="Projects" Type="SidejobModel.Store.Projects" Multiplicity="1" />
+          <End Role="ProjectRequirements" Type="SidejobModel.Store.ProjectRequirements" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Projects">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="ProjectRequirements">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_regionsUpdate_CountriesUpdate">
+          <End Role="CountriesUpdate" Type="SidejobModel.Store.CountriesUpdate" Multiplicity="1" />
+          <End Role="regionsUpdate" Type="SidejobModel.Store.regionsUpdate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CountriesUpdate">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="regionsUpdate">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="AcceptProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProjectID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="PendProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProjectID" Type="int" Mode="In" />
+          <Parameter Name="LCID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="PostProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProjectID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SaveProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProjectID" Type="int" Mode="In" />
+          <Parameter Name="LCID" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SidejobModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SidejobEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AutomatedMessages" EntityType="SidejobModel.AutomatedMessage" />
+          <EntitySet Name="AutomationEmailProblems" EntityType="SidejobModel.AutomationEmailProblem" />
+          <EntitySet Name="CitiesUpdates" EntityType="SidejobModel.CitiesUpdate" />
+          <EntitySet Name="CountriesUpdates" EntityType="SidejobModel.CountriesUpdate" />
+          <EntitySet Name="regionsUpdates" EntityType="SidejobModel.regionsUpdate" />
+          <AssociationSet Name="FK_CitiesUpdate_regionsUpdate" Association="SidejobModel.FK_CitiesUpdate_regionsUpdate">
+            <End Role="regionsUpdate" EntitySet="regionsUpdates" />
+            <End Role="CitiesUpdate" EntitySet="CitiesUpdates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_regionsUpdate_CountriesUpdate" Association="SidejobModel.FK_regionsUpdate_CountriesUpdate">
+            <End Role="CountriesUpdate" EntitySet="CountriesUpdates" />
+            <End Role="regionsUpdate" EntitySet="regionsUpdates" />
+          </AssociationSet>
+          <EntitySet Name="CanadaZipCodes" EntityType="SidejobModel.CanadaZipCode" />
+          <EntitySet Name="USAZipCodes" EntityType="SidejobModel.USAZipCode" />
+          <EntitySet Name="Categories" EntityType="SidejobModel.Category" />
+          <EntitySet Name="CategoriesFrs" EntityType="SidejobModel.CategoriesFr" />
+          <EntitySet Name="CategoriesSps" EntityType="SidejobModel.CategoriesSp" />
+          <EntitySet Name="LockedCustomers" EntityType="SidejobModel.LockedCustomer" />
+          <EntitySet Name="LockedProfessionals" EntityType="SidejobModel.LockedProfessional" />
+          <EntitySet Name="CustomerGenerals" EntityType="SidejobModel.CustomerGeneral" />
+          <EntitySet Name="EmailSentExceptions" EntityType="SidejobModel.EmailSentException" />
+          <EntitySet Name="ProfessionalGenerals" EntityType="SidejobModel.ProfessionalGeneral" />
+          <EntitySet Name="DeniedCustomers" EntityType="SidejobModel.DeniedCustomer" />
+          <EntitySet Name="DeniedProfessionals" EntityType="SidejobModel.DeniedProfessional" />
+          <FunctionImport Name="AcceptProject">
+          <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="PendProject">
+            <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+            <Parameter Name="LCID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="PostProject">
+          <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SaveProject">
+            <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+            <Parameter Name="LCID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="DeniedProjects" EntityType="SidejobModel.DeniedProject" />
+          <EntitySet Name="LockedProjects" EntityType="SidejobModel.LockedProject" />
+          <EntitySet Name="PendingProjects" EntityType="SidejobModel.PendingProject" />
+          <EntitySet Name="ProjectRequirements" EntityType="SidejobModel.ProjectRequirement" />
+          <EntitySet Name="Projects" EntityType="SidejobModel.Project" />
+          <AssociationSet Name="FK_ProjectRequirements_Projects" Association="SidejobModel.FK_ProjectRequirements_Projects">
+            <End Role="Project" EntitySet="Projects" />
+            <End Role="ProjectRequirement" EntitySet="ProjectRequirements" />
+          </AssociationSet>
+          <EntitySet Name="Jobs" EntityType="SidejobModel.Job" />
+          <EntitySet Name="JobsFrs" EntityType="SidejobModel.JobsFr" />
+          <EntitySet Name="JobsSps" EntityType="SidejobModel.JobsSp" />
+          <EntitySet Name="CategoriesArs" EntityType="SidejobModel.CategoriesAr" />
+          <EntitySet Name="CategoriesCns" EntityType="SidejobModel.CategoriesCn" />
+          <EntitySet Name="CategoriesDes" EntityType="SidejobModel.CategoriesDe" />
+          <EntitySet Name="CategoriesJas" EntityType="SidejobModel.CategoriesJa" />
+          <EntitySet Name="CategoriesRus" EntityType="SidejobModel.CategoriesRu" />
+          <EntitySet Name="JobsArs" EntityType="SidejobModel.JobsAr" />
+          <EntitySet Name="JobsCns" EntityType="SidejobModel.JobsCn" />
+          <EntitySet Name="JobsDes" EntityType="SidejobModel.JobsDe" />
+          <EntitySet Name="JobsJas" EntityType="SidejobModel.JobsJa" />
+          <EntitySet Name="JobsRus" EntityType="SidejobModel.JobsRu" />
+        </EntityContainer>
+        <EntityType Name="AutomatedMessage">
+          <Key>
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="MessageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmailAddress" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Message" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="AutomationEmailProblem">
+          <Key>
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="MessageID" Type="Int32" Nullable="false" />
+          <Property Name="EmailAddress" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Message" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="CitiesUpdate">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Type="Int32" Name="CityId" Nullable="false" />
+          <Property Type="Int32" Name="CountryId" Nullable="false" />
+          <Property Type="Int32" Name="RegionId" />
+          <Property Type="String" Name="City" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="Longitude" />
+          <Property Type="Double" Name="Latitude" />
+          <Property Type="String" Name="TimeZone" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Code" MaxLength="3" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="regionsUpdate" Relationship="SidejobModel.FK_CitiesUpdate_regionsUpdate" FromRole="CitiesUpdate" ToRole="regionsUpdate" />
+        </EntityType>
+        <EntityType Name="CountriesUpdate">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Type="Int32" Name="CountryId" Nullable="false" />
+          <Property Type="String" Name="Country" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FIPS104" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ISO2" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ISO3" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ISON" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Internet" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Capital" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MapReference" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NationalitySingular" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NationalityPlural" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Currency" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CurrencyCode" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="Population" />
+          <Property Type="String" Name="Title" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Comment" MaxLength="2048" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Path" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ContinentReference" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="regionsUpdates" Relationship="SidejobModel.FK_regionsUpdate_CountriesUpdate" FromRole="CountriesUpdate" ToRole="regionsUpdate" />
+        </EntityType>
+        <EntityType Name="regionsUpdate">
+          <Key>
+            <PropertyRef Name="RegionId" />
+          </Key>
+          <Property Type="Int32" Name="RegionId" Nullable="false" />
+          <Property Type="Int32" Name="CountryId" Nullable="false" />
+          <Property Type="String" Name="Region" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Code" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ADM1Code" MaxLength="4" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CitiesUpdates" Relationship="SidejobModel.FK_CitiesUpdate_regionsUpdate" FromRole="regionsUpdate" ToRole="CitiesUpdate" />
+          <NavigationProperty Name="CountriesUpdate" Relationship="SidejobModel.FK_regionsUpdate_CountriesUpdate" FromRole="regionsUpdate" ToRole="CountriesUpdate" />
+        </EntityType>
+        <Association Name="FK_CitiesUpdate_regionsUpdate">
+          <End Type="SidejobModel.regionsUpdate" Role="regionsUpdate" Multiplicity="0..1" />
+          <End Type="SidejobModel.CitiesUpdate" Role="CitiesUpdate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="regionsUpdate">
+              <PropertyRef Name="RegionId" />
+            </Principal>
+            <Dependent Role="CitiesUpdate">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_regionsUpdate_CountriesUpdate">
+          <End Type="SidejobModel.CountriesUpdate" Role="CountriesUpdate" Multiplicity="1" />
+          <End Type="SidejobModel.regionsUpdate" Role="regionsUpdate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CountriesUpdate">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="regionsUpdate">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CanadaZipCode">
+          <Key>
+            <PropertyRef Name="PostalCodeID" />
+          </Key>
+          <Property Type="Int32" Name="PostalCodeID" Nullable="false" />
+          <Property Type="String" Name="PostalCode" Nullable="false" MaxLength="7" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Province" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ProvinceCode" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="Latitude" Nullable="false" Precision="10" Scale="6" />
+          <Property Type="Decimal" Name="Longitude" Nullable="false" Precision="10" Scale="6" />
+        </EntityType>
+        <EntityType Name="USAZipCode">
+          <Key>
+            <PropertyRef Name="PostalCodeID" />
+          </Key>
+          <Property Type="Int32" Name="PostalCodeID" Nullable="false" />
+          <Property Type="Decimal" Name="Latitude" Precision="10" Scale="6" />
+          <Property Type="Decimal" Name="Longitude" Precision="10" Scale="6" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="State" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="County" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CategoriesFr">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CategoriesSp">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="LockedCustomer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="FirstName" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Country" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Region" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Age" />
+          <Property Type="Int32" Name="Gender" />
+          <Property Type="String" Name="EmailAddress" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reason" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="Int32" Name="IP" />
+          <Property Type="Int32" Name="CustomerID" />
+          <Property Type="Int32" Name="ProjectID" />
+        </EntityType>
+        <EntityType Name="LockedProfessional">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="FirstName" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Country" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Region" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Age" />
+          <Property Type="Int32" Name="Gender" />
+          <Property Type="String" Name="EmailAddress" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reason" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="Int32" Name="IP" />
+          <Property Type="Int32" Name="ProID" />
+          <Property Type="Int32" Name="ProjectID" />
+        </EntityType>
+        <EntityType Name="CustomerGeneral">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Type="Int32" Name="CustomerID" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CountryID" Nullable="false" />
+          <Property Type="String" Name="CountryName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="RegionID" Nullable="false" />
+          <Property Type="String" Name="RegionName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CityID" />
+          <Property Type="String" Name="CityName" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Zipcode" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HomePhoneNumber" MaxLength="24" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MobilePhoneNumber" MaxLength="24" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Age" Nullable="false" />
+          <Property Type="Int32" Name="Gender" Nullable="false" />
+          <Property Type="String" Name="EmailAddress" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PhotoPath" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmailSentException">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="DateTime" Name="DateTime" />
+          <Property Type="String" Name="EmailAddress" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reason" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="UserId" />
+          <Property Type="String" Name="UserRole" MaxLength="3" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ProfessionalGeneral">
+          <Key>
+            <PropertyRef Name="ProID" />
+          </Key>
+          <Property Type="Int32" Name="ProID" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CountryID" Nullable="false" />
+          <Property Type="String" Name="CountryName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="RegionID" Nullable="false" />
+          <Property Type="String" Name="RegionName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CityID" />
+          <Property Type="String" Name="CityName" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Zipcode" Nullable="false" MaxLength="7" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HomePhoneNumber" MaxLength="24" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MobilePhoneNumber" MaxLength="24" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Age" Nullable="false" />
+          <Property Type="Int32" Name="Gender" Nullable="false" />
+          <Property Type="String" Name="EmailAddress" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PhotoPath" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DeniedCustomer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FirstName" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Country" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Region" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Age" />
+          <Property Type="Int32" Name="Gender" />
+          <Property Type="String" Name="EmailAddress" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="Int32" Name="CustomerId" />
+        </EntityType>
+        <EntityType Name="DeniedProfessional">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FirstName" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Country" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Region" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Age" />
+          <Property Type="Int32" Name="Gender" />
+          <Property Type="String" Name="EmailAddress" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="Int32" Name="ProId" />
+        </EntityType>
+        <EntityType Name="DeniedProject">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ProjectID" />
+          <Property Type="Int32" Name="LCID" />
+          <Property Type="String" Name="JobTitle" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProjectTitle" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="StartDate" />
+          <Property Type="DateTime" Name="EndDate" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SpecialNotes" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DatePosted" />
+        </EntityType>
+        <EntityType Name="LockedProject">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ProjectID" />
+          <Property Type="Int32" Name="LCID" />
+          <Property Type="String" Name="JobTitle" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProjectTitle" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="StartDate" />
+          <Property Type="DateTime" Name="EndDate" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SpecialNotes" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DatePosted" />
+        </EntityType>
+        <EntityType Name="PendingProject">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Type="Int64" Name="ProjectID" Nullable="false" />
+          <Property Type="Int32" Name="LCID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProjectTitle" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="StartDate" Nullable="false" />
+          <Property Type="DateTime" Name="EndDate" Nullable="false" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SpecialNotes" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DatePosted" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProjectRequirement">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Type="Int64" Name="ProjectID" Nullable="false" />
+          <Property Type="Int32" Name="LCID" Nullable="false" />
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ExperienceID" Nullable="false" />
+          <Property Type="Int32" Name="CrewNumberID" Nullable="false" />
+          <Property Type="Int32" Name="LicensedID" Nullable="false" />
+          <Property Type="Int32" Name="InsuredID" Nullable="false" />
+          <Property Type="Int32" Name="RelocationID" Nullable="false" />
+          <Property Type="String" Name="ProjectTitle" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="StartDate" Nullable="false" />
+          <Property Type="DateTime" Name="EndDate" Nullable="false" />
+          <Property Type="Double" Name="AmountOffered" Nullable="false" />
+          <Property Type="Int32" Name="CurrencyID" Nullable="false" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SpecialNotes" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CountryID" Nullable="false" />
+          <Property Type="String" Name="CountryName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="RegionID" Nullable="false" />
+          <Property Type="String" Name="RegionName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CityID" />
+          <Property Type="String" Name="CityName" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Zipcode" MaxLength="7" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DatePosted" Nullable="false" />
+          <Property Type="String" Name="TimeLeft" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Project" Relationship="SidejobModel.FK_ProjectRequirements_Projects" FromRole="ProjectRequirement" ToRole="Project" />
+        </EntityType>
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Type="Int64" Name="ProjectID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="PosterID" Nullable="false" />
+          <Property Type="String" Name="PosterRole" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="PosterUserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="HighestBid" />
+          <Property Type="Int32" Name="HighestBidderID" />
+          <Property Type="String" Name="HighestBidUsername" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="NumberofBids" Nullable="false" />
+          <Property Type="Int32" Name="Posted" Nullable="false" />
+          <Property Type="Int32" Name="StatusInt" Nullable="false" />
+          <NavigationProperty Name="ProjectRequirement" Relationship="SidejobModel.FK_ProjectRequirements_Projects" FromRole="Project" ToRole="ProjectRequirement" />
+        </EntityType>
+        <Association Name="FK_ProjectRequirements_Projects">
+          <End Type="SidejobModel.Project" Role="Project" Multiplicity="1" />
+          <End Type="SidejobModel.ProjectRequirement" Role="ProjectRequirement" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="ProjectRequirement">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobRank" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsFr">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobRank" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsSp">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobRank" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CategoriesAr">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CategoriesCn">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CategoriesDe">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CategoriesJa">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CategoriesRu">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Type="Int32" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="JobsAr">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobRank" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsCn">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobRank" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsDe">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobRank" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsJa">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobRank" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobsRu">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Type="Int32" Name="JobID" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JobRank" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SidejobModelStoreContainer" CdmEntityContainer="SidejobEntities">
+          <EntitySetMapping Name="AutomatedMessages"><EntityTypeMapping TypeName="SidejobModel.AutomatedMessage"><MappingFragment StoreEntitySet="AutomatedMessage">
+            <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+            <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+            <ScalarProperty Name="Title" ColumnName="Title" />
+            <ScalarProperty Name="Message" ColumnName="Message" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AutomationEmailProblems"><EntityTypeMapping TypeName="SidejobModel.AutomationEmailProblem"><MappingFragment StoreEntitySet="AutomationEmailProblem">
+            <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+            <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+            <ScalarProperty Name="Title" ColumnName="Title" />
+            <ScalarProperty Name="Message" ColumnName="Message" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CitiesUpdates">
+            <EntityTypeMapping TypeName="SidejobModel.CitiesUpdate">
+              <MappingFragment StoreEntitySet="CitiesUpdate">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="TimeZone" ColumnName="TimeZone" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CountriesUpdates">
+            <EntityTypeMapping TypeName="SidejobModel.CountriesUpdate">
+              <MappingFragment StoreEntitySet="CountriesUpdate">
+                <ScalarProperty Name="ContinentReference" ColumnName="ContinentReference" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Population" ColumnName="Population" />
+                <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="NationalityPlural" ColumnName="NationalityPlural" />
+                <ScalarProperty Name="NationalitySingular" ColumnName="NationalitySingular" />
+                <ScalarProperty Name="MapReference" ColumnName="MapReference" />
+                <ScalarProperty Name="Capital" ColumnName="Capital" />
+                <ScalarProperty Name="Internet" ColumnName="Internet" />
+                <ScalarProperty Name="ISON" ColumnName="ISON" />
+                <ScalarProperty Name="ISO3" ColumnName="ISO3" />
+                <ScalarProperty Name="ISO2" ColumnName="ISO2" />
+                <ScalarProperty Name="FIPS104" ColumnName="FIPS104" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="regionsUpdates">
+            <EntityTypeMapping TypeName="SidejobModel.regionsUpdate">
+              <MappingFragment StoreEntitySet="regionsUpdate">
+                <ScalarProperty Name="ADM1Code" ColumnName="ADM1Code" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CanadaZipCodes">
+            <EntityTypeMapping TypeName="SidejobModel.CanadaZipCode">
+              <MappingFragment StoreEntitySet="CanadaZipCode">
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="ProvinceCode" ColumnName="ProvinceCode" />
+                <ScalarProperty Name="Province" ColumnName="Province" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="PostalCodeID" ColumnName="PostalCodeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USAZipCodes">
+            <EntityTypeMapping TypeName="SidejobModel.USAZipCode">
+              <MappingFragment StoreEntitySet="USAZipCode">
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="PostalCodeID" ColumnName="PostalCodeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="SidejobModel.Category">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoriesFrs">
+            <EntityTypeMapping TypeName="SidejobModel.CategoriesFr">
+              <MappingFragment StoreEntitySet="CategoriesFr">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoriesSps">
+            <EntityTypeMapping TypeName="SidejobModel.CategoriesSp">
+              <MappingFragment StoreEntitySet="CategoriesSp">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LockedCustomers">
+            <EntityTypeMapping TypeName="SidejobModel.LockedCustomer">
+              <MappingFragment StoreEntitySet="LockedCustomer">
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Reason" ColumnName="Reason" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LockedProfessionals">
+            <EntityTypeMapping TypeName="SidejobModel.LockedProfessional">
+              <MappingFragment StoreEntitySet="LockedProfessional">
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="ProID" ColumnName="ProID" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Reason" ColumnName="Reason" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerGenerals">
+            <EntityTypeMapping TypeName="SidejobModel.CustomerGeneral">
+              <MappingFragment StoreEntitySet="CustomerGeneral">
+                <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+                <ScalarProperty Name="HomePhoneNumber" ColumnName="HomePhoneNumber" />
+                <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+                <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmailSentExceptions">
+            <EntityTypeMapping TypeName="SidejobModel.EmailSentException">
+              <MappingFragment StoreEntitySet="EmailSentException">
+                <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Reason" ColumnName="Reason" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProfessionalGenerals">
+            <EntityTypeMapping TypeName="SidejobModel.ProfessionalGeneral">
+              <MappingFragment StoreEntitySet="ProfessionalGeneral">
+                <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+                <ScalarProperty Name="HomePhoneNumber" ColumnName="HomePhoneNumber" />
+                <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+                <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="ProID" ColumnName="ProID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeniedCustomers">
+            <EntityTypeMapping TypeName="SidejobModel.DeniedCustomer">
+              <MappingFragment StoreEntitySet="DeniedCustomer">
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeniedProfessionals">
+            <EntityTypeMapping TypeName="SidejobModel.DeniedProfessional">
+              <MappingFragment StoreEntitySet="DeniedProfessional">
+                <ScalarProperty Name="ProId" ColumnName="ProId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="AcceptProject" FunctionName="SidejobModel.Store.AcceptProject" />
+          <FunctionImportMapping FunctionImportName="PendProject" FunctionName="SidejobModel.Store.PendProject" />
+          <FunctionImportMapping FunctionImportName="PostProject" FunctionName="SidejobModel.Store.PostProject" />
+          <FunctionImportMapping FunctionImportName="SaveProject" FunctionName="SidejobModel.Store.SaveProject" />
+          <EntitySetMapping Name="DeniedProjects">
+            <EntityTypeMapping TypeName="SidejobModel.DeniedProject">
+              <MappingFragment StoreEntitySet="DeniedProject">
+                <ScalarProperty Name="DatePosted" ColumnName="DatePosted" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="SpecialNotes" ColumnName="SpecialNotes" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="ProjectTitle" ColumnName="ProjectTitle" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="LCID" ColumnName="LCID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LockedProjects">
+            <EntityTypeMapping TypeName="SidejobModel.LockedProject">
+              <MappingFragment StoreEntitySet="LockedProject">
+                <ScalarProperty Name="DatePosted" ColumnName="DatePosted" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="SpecialNotes" ColumnName="SpecialNotes" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="ProjectTitle" ColumnName="ProjectTitle" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="LCID" ColumnName="LCID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PendingProjects">
+            <EntityTypeMapping TypeName="SidejobModel.PendingProject">
+              <MappingFragment StoreEntitySet="PendingProject">
+                <ScalarProperty Name="DatePosted" ColumnName="DatePosted" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="SpecialNotes" ColumnName="SpecialNotes" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="ProjectTitle" ColumnName="ProjectTitle" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="LCID" ColumnName="LCID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProjectRequirements">
+            <EntityTypeMapping TypeName="SidejobModel.ProjectRequirement">
+              <MappingFragment StoreEntitySet="ProjectRequirements">
+                <ScalarProperty Name="TimeLeft" ColumnName="TimeLeft" />
+                <ScalarProperty Name="DatePosted" ColumnName="DatePosted" />
+                <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+                <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="SpecialNotes" ColumnName="SpecialNotes" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+                <ScalarProperty Name="AmountOffered" ColumnName="AmountOffered" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="ProjectTitle" ColumnName="ProjectTitle" />
+                <ScalarProperty Name="RelocationID" ColumnName="RelocationID" />
+                <ScalarProperty Name="InsuredID" ColumnName="InsuredID" />
+                <ScalarProperty Name="LicensedID" ColumnName="LicensedID" />
+                <ScalarProperty Name="CrewNumberID" ColumnName="CrewNumberID" />
+                <ScalarProperty Name="ExperienceID" ColumnName="ExperienceID" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="LCID" ColumnName="LCID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projects">
+            <EntityTypeMapping TypeName="SidejobModel.Project">
+              <MappingFragment StoreEntitySet="Projects">
+                <ScalarProperty Name="StatusInt" ColumnName="StatusInt" />
+                <ScalarProperty Name="Posted" ColumnName="Posted" />
+                <ScalarProperty Name="NumberofBids" ColumnName="NumberofBids" />
+                <ScalarProperty Name="HighestBidUsername" ColumnName="HighestBidUsername" />
+                <ScalarProperty Name="HighestBidderID" ColumnName="HighestBidderID" />
+                <ScalarProperty Name="HighestBid" ColumnName="HighestBid" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="PosterUserName" ColumnName="PosterUserName" />
+                <ScalarProperty Name="PosterRole" ColumnName="PosterRole" />
+                <ScalarProperty Name="PosterID" ColumnName="PosterID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Jobs">
+            <EntityTypeMapping TypeName="SidejobModel.Job">
+              <MappingFragment StoreEntitySet="Jobs">
+                <ScalarProperty Name="JobRank" ColumnName="JobRank" />
+                <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobsFrs">
+            <EntityTypeMapping TypeName="SidejobModel.JobsFr">
+              <MappingFragment StoreEntitySet="JobsFr">
+                <ScalarProperty Name="JobRank" ColumnName="JobRank" />
+                <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobsSps">
+            <EntityTypeMapping TypeName="SidejobModel.JobsSp">
+              <MappingFragment StoreEntitySet="JobsSp">
+                <ScalarProperty Name="JobRank" ColumnName="JobRank" />
+                <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoriesArs">
+            <EntityTypeMapping TypeName="SidejobModel.CategoriesAr">
+              <MappingFragment StoreEntitySet="CategoriesAr">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoriesCns">
+            <EntityTypeMapping TypeName="SidejobModel.CategoriesCn">
+              <MappingFragment StoreEntitySet="CategoriesCn">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoriesDes">
+            <EntityTypeMapping TypeName="SidejobModel.CategoriesDe">
+              <MappingFragment StoreEntitySet="CategoriesDe">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoriesJas">
+            <EntityTypeMapping TypeName="SidejobModel.CategoriesJa">
+              <MappingFragment StoreEntitySet="CategoriesJa">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoriesRus">
+            <EntityTypeMapping TypeName="SidejobModel.CategoriesRu">
+              <MappingFragment StoreEntitySet="CategoriesRu">
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobsArs">
+            <EntityTypeMapping TypeName="SidejobModel.JobsAr">
+              <MappingFragment StoreEntitySet="JobsAr">
+                <ScalarProperty Name="JobRank" ColumnName="JobRank" />
+                <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobsCns">
+            <EntityTypeMapping TypeName="SidejobModel.JobsCn">
+              <MappingFragment StoreEntitySet="JobsCn">
+                <ScalarProperty Name="JobRank" ColumnName="JobRank" />
+                <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobsDes">
+            <EntityTypeMapping TypeName="SidejobModel.JobsDe">
+              <MappingFragment StoreEntitySet="JobsDe">
+                <ScalarProperty Name="JobRank" ColumnName="JobRank" />
+                <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobsJas">
+            <EntityTypeMapping TypeName="SidejobModel.JobsJa">
+              <MappingFragment StoreEntitySet="JobsJa">
+                <ScalarProperty Name="JobRank" ColumnName="JobRank" />
+                <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobsRus">
+            <EntityTypeMapping TypeName="SidejobModel.JobsRu">
+              <MappingFragment StoreEntitySet="JobsRu">
+                <ScalarProperty Name="JobRank" ColumnName="JobRank" />
+                <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="SideJobModel">
+        <EntityTypeShape EntityType="SidejobModel.AutomatedMessage" Width="1.5" PointX="0.75" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="SidejobModel.AutomationEmailProblem" Width="1.5" PointX="2.75" PointY="0.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="SidejobModel.CitiesUpdate" Width="1.5" PointX="5.25" PointY="5" Height="2.7494921874999996" />
+        <EntityTypeShape EntityType="SidejobModel.CountriesUpdate" Width="1.5" PointX="0.75" PointY="4" Height="4.6725065104166665" />
+        <EntityTypeShape EntityType="SidejobModel.regionsUpdate" Width="1.5" PointX="3" PointY="5.25" Height="2.3648893229166656" />
+        <AssociationConnector Association="SidejobModel.FK_CitiesUpdate_regionsUpdate" >
+          <ConnectorPoint PointX="4.5" PointY="6.4324446614583328" />
+          <ConnectorPoint PointX="5.25" PointY="6.4324446614583328" />
+        </AssociationConnector>
+        <AssociationConnector Association="SidejobModel.FK_regionsUpdate_CountriesUpdate" >
+          <ConnectorPoint PointX="2.25" PointY="6.4324446614583328" />
+          <ConnectorPoint PointX="3" PointY="6.4324446614583328" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="SidejobModel.CanadaZipCode" Width="1.5" PointX="5.375" PointY="0.75" Height="2.5571907552083326" />
+        <EntityTypeShape EntityType="SidejobModel.USAZipCode" Width="1.5" PointX="7.375" PointY="0.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SidejobModel.Category" Width="1.5" PointX="7.375" PointY="4.75" Height="1.4033821614583317" />
+        <EntityTypeShape EntityType="SidejobModel.CategoriesFr" Width="1.5" PointX="7.375" PointY="7.75" Height="1.4033821614583317" />
+        <EntityTypeShape EntityType="SidejobModel.CategoriesSp" Width="1.5" PointX="3.375" PointY="8.75" Height="1.4033821614583317" />
+        <EntityTypeShape EntityType="SidejobModel.LockedCustomer" Width="1.5" PointX="9.75" PointY="0.75" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="SidejobModel.LockedProfessional" Width="1.5" PointX="0.75" PointY="9.75" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="SidejobModel.CustomerGeneral" Width="1.5" PointX="9.375" PointY="5.75" Height="4.4802050781250031" />
+        <EntityTypeShape EntityType="SidejobModel.EmailSentException" Width="1.5" PointX="5.375" PointY="10.75" Height="2.1725878906250031" />
+        <EntityTypeShape EntityType="SidejobModel.ProfessionalGeneral" Width="1.5" PointX="11.375" PointY="5.75" Height="4.4802050781250031" />
+        <EntityTypeShape EntityType="SidejobModel.DeniedCustomer" Width="1.5" PointX="7.375" PointY="11.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SidejobModel.DeniedProfessional" Width="1.5" PointX="9.375" PointY="11.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SidejobModel.DeniedProject" Width="1.5" PointX="11.375" PointY="11.75" Height="3.1340950520833388" />
+        <EntityTypeShape EntityType="SidejobModel.LockedProject" Width="1.5" PointX="12.375" PointY="0.75" Height="3.1340950520833388" />
+        <EntityTypeShape EntityType="SidejobModel.PendingProject" Width="1.5" PointX="3.375" PointY="13.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SidejobModel.ProjectRequirement" Width="1.5" PointX="15.625" PointY="5.125" Height="6.5955208333333282" />
+        <EntityTypeShape EntityType="SidejobModel.Project" Width="1.5" PointX="13.375" PointY="6.75" Height="3.326396484374996" />
+        <AssociationConnector Association="SidejobModel.FK_ProjectRequirements_Projects" >
+          <ConnectorPoint PointX="14.875" PointY="8.413198242187498" />
+          <ConnectorPoint PointX="15.625" PointY="8.413198242187498" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="SidejobModel.Job" Width="1.5" PointX="13.75" PointY="12.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SidejobModel.JobsFr" Width="1.5" PointX="14.75" PointY="0.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SidejobModel.JobsSp" Width="1.5" PointX="0.75" PointY="14.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SidejobModel.CategoriesAr" Width="1.5" PointX="5.75" PointY="15.75" Height="1.4033821614583246" />
+        <EntityTypeShape EntityType="SidejobModel.CategoriesCn" Width="1.5" PointX="7.75" PointY="15.75" Height="1.4033821614583246" />
+        <EntityTypeShape EntityType="SidejobModel.CategoriesDe" Width="1.5" PointX="9.75" PointY="15.75" Height="1.4033821614583246" />
+        <EntityTypeShape EntityType="SidejobModel.CategoriesJa" Width="1.5" PointX="11.75" PointY="15.75" Height="1.4033821614583246" />
+        <EntityTypeShape EntityType="SidejobModel.CategoriesRu" Width="1.5" PointX="13.75" PointY="15.75" Height="1.4033821614583246" />
+        <EntityTypeShape EntityType="SidejobModel.JobsAr" Width="1.5" PointX="15.75" PointY="15.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SidejobModel.JobsCn" Width="1.5" PointX="16.75" PointY="12.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SidejobModel.JobsDe" Width="1.5" PointX="17.75" PointY="0.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SidejobModel.JobsJa" Width="1.5" PointX="0.75" PointY="17.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SidejobModel.JobsRu" Width="1.5" PointX="2.75" PointY="17.75" Height="1.7879850260416674" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

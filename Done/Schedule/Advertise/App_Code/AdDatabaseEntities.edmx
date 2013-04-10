@@ -1,0 +1,2396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AdDatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="AdDatabaseModelStoreContainer">
+          <EntitySet Name="AdAudience" EntityType="AdDatabaseModel.Store.AdAudience" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdGeneral" EntityType="AdDatabaseModel.Store.AdGeneral" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdList" EntityType="AdDatabaseModel.Store.AdList" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdStats" EntityType="AdDatabaseModel.Store.AdStats" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdTotalStats" EntityType="AdDatabaseModel.Store.AdTotalStats" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdvertiserHackedPDT" EntityType="AdDatabaseModel.Store.AdvertiserHackedPDT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdvertiserPaymentDue" EntityType="AdDatabaseModel.Store.AdvertiserPaymentDue" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdvertiserSuccessfulIPN" EntityType="AdDatabaseModel.Store.AdvertiserSuccessfulIPN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdvertiserSuccessfulPDT" EntityType="AdDatabaseModel.Store.AdvertiserSuccessfulPDT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdvertiserSuspiciousIPN" EntityType="AdDatabaseModel.Store.AdvertiserSuspiciousIPN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AgeRanges" EntityType="AdDatabaseModel.Store.AgeRanges" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArchivedAdvertiserPayment" EntityType="AdDatabaseModel.Store.ArchivedAdvertiserPayment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArchivedAdvertiserSuccessfulIPN" EntityType="AdDatabaseModel.Store.ArchivedAdvertiserSuccessfulIPN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArchivedAdvertiserSuccessfulPDT" EntityType="AdDatabaseModel.Store.ArchivedAdvertiserSuccessfulPDT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Applications" EntityType="AdDatabaseModel.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Membership" EntityType="AdDatabaseModel.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Paths" EntityType="AdDatabaseModel.Store.aspnet_Paths" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="AdDatabaseModel.Store.aspnet_PersonalizationAllUsers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="AdDatabaseModel.Store.aspnet_PersonalizationPerUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Profile" EntityType="AdDatabaseModel.Store.aspnet_Profile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Roles" EntityType="AdDatabaseModel.Store.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="AdDatabaseModel.Store.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Users" EntityType="AdDatabaseModel.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_UsersInRoles" EntityType="AdDatabaseModel.Store.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="AdDatabaseModel.Store.aspnet_WebEvent_Events" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Formats" EntityType="AdDatabaseModel.Store.Formats" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Languages" EntityType="AdDatabaseModel.Store.Languages" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PendingAd" EntityType="AdDatabaseModel.Store.PendingAd" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PendingAdvertiserPayment" EntityType="AdDatabaseModel.Store.PendingAdvertiserPayment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Positions" EntityType="AdDatabaseModel.Store.Positions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sections" EntityType="AdDatabaseModel.Store.Sections" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sites" EntityType="AdDatabaseModel.Store.Sites" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TempAd" EntityType="AdDatabaseModel.Store.TempAd" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TempAd2" EntityType="AdDatabaseModel.Store.TempAd2" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VisitorGeo" EntityType="AdDatabaseModel.Store.VisitorGeo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VisitorInfo" EntityType="AdDatabaseModel.Store.VisitorInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VisitorPlatform" EntityType="AdDatabaseModel.Store.VisitorPlatform" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__21B6055D" Association="AdDatabaseModel.Store.FK__aspnet_Me__Appli__21B6055D">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__22AA2996" Association="AdDatabaseModel.Store.FK__aspnet_Me__UserI__22AA2996">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__534D60F1" Association="AdDatabaseModel.Store.FK__aspnet_Pa__Appli__534D60F1">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__59063A47" Association="AdDatabaseModel.Store.FK__aspnet_Pe__PathI__59063A47">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__5CD6CB2B" Association="AdDatabaseModel.Store.FK__aspnet_Pe__PathI__5CD6CB2B">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__5DCAEF64" Association="AdDatabaseModel.Store.FK__aspnet_Pe__UserI__5DCAEF64">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__36B12243" Association="AdDatabaseModel.Store.FK__aspnet_Pr__UserI__36B12243">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__403A8C7D" Association="AdDatabaseModel.Store.FK__aspnet_Ro__Appli__403A8C7D">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__117F9D94" Association="AdDatabaseModel.Store.FK__aspnet_Us__Appli__117F9D94">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__RoleI__44FF419A" Association="AdDatabaseModel.Store.FK__aspnet_Us__RoleI__44FF419A">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__440B1D61" Association="AdDatabaseModel.Store.FK__aspnet_Us__UserI__440B1D61">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AdAudience">
+          <Key>
+            <PropertyRef Name="AdID" />
+          </Key>
+          <Property Name="AdID" Type="int" Nullable="false" />
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+          <Property Name="GenderID" Type="int" Nullable="false" />
+          <Property Name="AgeRangeID" Type="int" Nullable="false" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="Zipcode" Type="nvarchar" Nullable="false" MaxLength="7" />
+          <Property Name="IndustryID" Type="int" Nullable="false" />
+          <Property Name="Profession" Type="text" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="RegionID" Type="int" Nullable="false" />
+          <Property Name="RegionName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="CityName" Type="varchar" MaxLength="128" />
+          <Property Name="CountryCode" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="FlagPath" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ProfessionID" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AdGeneral">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SiteID" Type="int" Nullable="false" />
+          <Property Name="SectionID" Type="int" Nullable="false" />
+          <Property Name="PositionID" Type="int" Nullable="false" />
+          <Property Name="NavigateUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="FormatID" Type="int" Nullable="false" />
+          <Property Name="ImageUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="AlternateText" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="Keyword" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Impressions" Type="int" Nullable="false" />
+          <Property Name="Width" Type="int" Nullable="false" />
+          <Property Name="Height" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="AdTypeID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AdName" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+          <Property Name="Completed" Type="bit" />
+        </EntityType>
+        <EntityType Name="AdList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="Width" Type="int" Nullable="false" />
+          <Property Name="Height" Type="int" Nullable="false" />
+          <Property Name="NavigateUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="AlternateText" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="Keyword" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Impressions" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="AdTypeID" Type="int" />
+          <Property Name="PositionID" Type="int" />
+          <Property Name="AdName" Type="nvarchar" MaxLength="300" />
+          <Property Name="UserID" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="AdStats">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AdId" Type="int" />
+          <Property Name="EntryDate" Type="datetime" />
+          <Property Name="Type" Type="int" />
+        </EntityType>
+        <EntityType Name="AdTotalStats">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AdId" Type="int" />
+          <Property Name="TotalImpression" Type="int" />
+          <Property Name="TotalClick" Type="int" />
+        </EntityType>
+        <EntityType Name="AdvertiserHackedPDT">
+          <Key>
+            <PropertyRef Name="PDTID" />
+          </Key>
+          <Property Name="PDTID" Type="int" Nullable="false" />
+          <Property Name="GrossTotal" Type="float" Nullable="false" />
+          <Property Name="Invoice" Type="int" Nullable="false" />
+          <Property Name="PaymentStatus" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="PaymentFee" Type="float" Nullable="false" />
+          <Property Name="BusinessEmail" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="TxToken" Type="varchar(max)" Nullable="false" />
+          <Property Name="ReceiverEmail" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ItemName" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="CurrencyCode" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="TransactionId" Type="varchar(max)" Nullable="false" />
+          <Property Name="Custom" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="SubscriberId" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="AdvertiserID" Type="uniqueidentifier" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AdvertiserPaymentDue">
+          <Key>
+            <PropertyRef Name="PaymentDueID" />
+          </Key>
+          <Property Name="AdvertiserID" Type="uniqueidentifier" />
+          <Property Name="PaymentDueID" Type="int" Nullable="false" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+          <Property Name="AdAmount" Type="float" Nullable="false" />
+          <Property Name="Date" Type="smalldatetime" Nullable="false" />
+          <Property Name="CurrencyCode" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="PaymentDue" Type="float" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="AdvertiserSuccessfulIPN">
+          <Key>
+            <PropertyRef Name="IPNID" />
+          </Key>
+          <Property Name="IPNID" Type="int" Nullable="false" />
+          <Property Name="GrossTotal" Type="float" />
+          <Property Name="Invoice" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentStatus" Type="varchar" MaxLength="10" />
+          <Property Name="FirstName" Type="varchar" MaxLength="300" />
+          <Property Name="LastName" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentFee" Type="float" />
+          <Property Name="BusinessEmail" Type="varchar" MaxLength="255" />
+          <Property Name="ReceiverEmail" Type="varchar" MaxLength="255" />
+          <Property Name="ItemName" Type="varchar" MaxLength="100" />
+          <Property Name="CurrencyCode" Type="varchar" MaxLength="3" />
+          <Property Name="TransactionId" Type="varchar(max)" />
+          <Property Name="Custom" Type="varchar" MaxLength="200" />
+          <Property Name="AdvertiserID" Type="uniqueidentifier" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+          <Property Name="TxType" Type="varchar" MaxLength="20" />
+          <Property Name="PendingReason" Type="varchar" MaxLength="50" />
+          <Property Name="PaymentDate" Type="datetime" />
+          <Property Name="Address" Type="varchar" MaxLength="50" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Zip" Type="varchar" MaxLength="10" />
+          <Property Name="Country" Type="varchar" MaxLength="20" />
+          <Property Name="CountryCode" Type="varchar" MaxLength="4" />
+          <Property Name="AddressStatus" Type="varchar" MaxLength="10" />
+          <Property Name="PayerStatus" Type="varchar" MaxLength="10" />
+          <Property Name="PayerID" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentType" Type="varchar" MaxLength="20" />
+          <Property Name="NotifyVersion" Type="varchar" MaxLength="10" />
+          <Property Name="PayerPhone" Type="varchar" MaxLength="30" />
+          <Property Name="Tax" Type="varchar" MaxLength="10" />
+          <Property Name="PayerBusinessName" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="AdvertiserSuccessfulPDT">
+          <Key>
+            <PropertyRef Name="PDTID" />
+          </Key>
+          <Property Name="PDTID" Type="int" Nullable="false" />
+          <Property Name="GrossTotal" Type="float" Nullable="false" />
+          <Property Name="Invoice" Type="int" Nullable="false" />
+          <Property Name="PaymentStatus" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="PaymentFee" Type="float" Nullable="false" />
+          <Property Name="BusinessEmail" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TxToken" Type="varchar(max)" />
+          <Property Name="ReceiverEmail" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ItemName" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="CurrencyCode" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="TransactionId" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="Custom" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="subscriberId" Type="varchar" MaxLength="200" />
+          <Property Name="AdvertiserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AdvertiserSuspiciousIPN">
+          <Key>
+            <PropertyRef Name="IPNID" />
+          </Key>
+          <Property Name="IPNID" Type="int" Nullable="false" />
+          <Property Name="GrossTotal" Type="float" />
+          <Property Name="Invoice" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentStatus" Type="varchar" MaxLength="10" />
+          <Property Name="FirstName" Type="varchar" MaxLength="300" />
+          <Property Name="LastName" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentFee" Type="float" />
+          <Property Name="BusinessEmail" Type="varchar" MaxLength="255" />
+          <Property Name="ReceiverEmail" Type="varchar" MaxLength="255" />
+          <Property Name="ItemName" Type="varchar" MaxLength="100" />
+          <Property Name="CurrencyCode" Type="varchar" MaxLength="3" />
+          <Property Name="TransactionId" Type="varchar(max)" />
+          <Property Name="Custom" Type="varchar" MaxLength="200" />
+          <Property Name="AdvertiserID" Type="uniqueidentifier" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+          <Property Name="TxType" Type="varchar" MaxLength="20" />
+          <Property Name="PendingReason" Type="varchar" MaxLength="50" />
+          <Property Name="PaymentDate" Type="datetime" />
+          <Property Name="Address" Type="varchar" MaxLength="50" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Zip" Type="varchar" MaxLength="10" />
+          <Property Name="Country" Type="varchar" MaxLength="20" />
+          <Property Name="CountryCode" Type="varchar" MaxLength="4" />
+          <Property Name="AddressStatus" Type="varchar" MaxLength="10" />
+          <Property Name="PayerStatus" Type="varchar" MaxLength="10" />
+          <Property Name="PayerID" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentType" Type="varchar" MaxLength="20" />
+          <Property Name="NotifyVersion" Type="varchar" MaxLength="10" />
+          <Property Name="PayerPhone" Type="varchar" MaxLength="30" />
+          <Property Name="Tax" Type="varchar" MaxLength="10" />
+          <Property Name="PayerBusinessName" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="AgeRanges">
+          <Key>
+            <PropertyRef Name="AgeRangeID" />
+          </Key>
+          <Property Name="AgeRangeID" Type="int" Nullable="false" />
+          <Property Name="AgeRangeValue" Type="nchar" Nullable="false" MaxLength="30" />
+          <Property Name="LCID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ArchivedAdvertiserPayment">
+          <Key>
+            <PropertyRef Name="ArchivedPaymentDue" />
+          </Key>
+          <Property Name="AdvertiserID" Type="uniqueidentifier" />
+          <Property Name="PaymentDueID" Type="int" Nullable="false" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+          <Property Name="AdAmount" Type="float" Nullable="false" />
+          <Property Name="Date" Type="smalldatetime" Nullable="false" />
+          <Property Name="CurrencyCode" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="PaymentDue" Type="float" Nullable="false" />
+          <Property Name="ArchivedPaymentDue" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="ArchivedAdvertiserSuccessfulIPN">
+          <Key>
+            <PropertyRef Name="IPNID" />
+          </Key>
+          <Property Name="IPNID" Type="int" Nullable="false" />
+          <Property Name="GrossTotal" Type="float" />
+          <Property Name="Invoice" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentStatus" Type="varchar" MaxLength="10" />
+          <Property Name="FirstName" Type="varchar" MaxLength="300" />
+          <Property Name="LastName" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentFee" Type="float" />
+          <Property Name="BusinessEmail" Type="varchar" MaxLength="255" />
+          <Property Name="ReceiverEmail" Type="varchar" MaxLength="255" />
+          <Property Name="ItemName" Type="varchar" MaxLength="100" />
+          <Property Name="CurrencyCode" Type="varchar" MaxLength="3" />
+          <Property Name="TransactionId" Type="varchar(max)" />
+          <Property Name="Custom" Type="varchar" MaxLength="200" />
+          <Property Name="AdvertiserID" Type="uniqueidentifier" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+          <Property Name="TxType" Type="varchar" MaxLength="20" />
+          <Property Name="PendingReason" Type="varchar" MaxLength="50" />
+          <Property Name="PaymentDate" Type="datetime" />
+          <Property Name="Address" Type="varchar" MaxLength="50" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Zip" Type="varchar" MaxLength="10" />
+          <Property Name="Country" Type="varchar" MaxLength="20" />
+          <Property Name="CountryCode" Type="varchar" MaxLength="4" />
+          <Property Name="AddressStatus" Type="varchar" MaxLength="10" />
+          <Property Name="PayerStatus" Type="varchar" MaxLength="10" />
+          <Property Name="PayerID" Type="varchar" MaxLength="300" />
+          <Property Name="PaymentType" Type="varchar" MaxLength="20" />
+          <Property Name="NotifyVersion" Type="varchar" MaxLength="10" />
+          <Property Name="PayerPhone" Type="varchar" MaxLength="30" />
+          <Property Name="Tax" Type="varchar" MaxLength="10" />
+          <Property Name="PayerBusinessName" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="ArchivedAdvertiserSuccessfulPDT">
+          <Key>
+            <PropertyRef Name="PDTID" />
+          </Key>
+          <Property Name="PDTID" Type="int" Nullable="false" />
+          <Property Name="GrossTotal" Type="float" Nullable="false" />
+          <Property Name="Invoice" Type="int" Nullable="false" />
+          <Property Name="PaymentStatus" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="PaymentFee" Type="float" Nullable="false" />
+          <Property Name="BusinessEmail" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TxToken" Type="varchar(max)" />
+          <Property Name="ReceiverEmail" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ItemName" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="CurrencyCode" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="TransactionId" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="Custom" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="subscriberId" Type="varchar" MaxLength="200" />
+          <Property Name="AdvertiserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordFormat" Type="int" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="ntext" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredPath" Type="nvarchar" Nullable="false" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_UsersInRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="char" Nullable="false" MaxLength="32" />
+          <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+          <Property Name="EventTime" Type="datetime" Nullable="false" />
+          <Property Name="EventType" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="EventSequence" Type="decimal" Nullable="false" Precision="19" />
+          <Property Name="EventOccurrence" Type="decimal" Nullable="false" Precision="19" />
+          <Property Name="EventCode" Type="int" Nullable="false" />
+          <Property Name="EventDetailCode" Type="int" Nullable="false" />
+          <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+          <Property Name="Details" Type="ntext" />
+        </EntityType>
+        <EntityType Name="Formats">
+          <Key>
+            <PropertyRef Name="FormatID" />
+          </Key>
+          <Property Name="FormatID" Type="int" Nullable="false" />
+          <Property Name="FormatName" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="LCID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Languages">
+          <Key>
+            <PropertyRef Name="LanguageID" />
+          </Key>
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+          <Property Name="Language" Type="nchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="PendingAd">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="SiteID" Type="int" Nullable="false" />
+          <Property Name="SectionID" Type="int" Nullable="false" />
+          <Property Name="PositionID" Type="int" Nullable="false" />
+          <Property Name="NavigateUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="FormatID" Type="int" Nullable="false" />
+          <Property Name="ImageUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="AlternateText" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="Keyword" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Impressions" Type="int" Nullable="false" />
+          <Property Name="Width" Type="int" Nullable="false" />
+          <Property Name="Height" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" Nullable="false" />
+          <Property Name="AdTypeID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AdName" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+          <Property Name="GenderID" Type="int" Nullable="false" />
+          <Property Name="AgeRangeID" Type="int" Nullable="false" />
+          <Property Name="Zipcode" Type="nvarchar" Nullable="false" MaxLength="7" />
+          <Property Name="IndustryID" Type="int" Nullable="false" />
+          <Property Name="NumberofProfession" Type="int" Nullable="false" />
+          <Property Name="Profession" Type="text" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="RegionID" Type="int" Nullable="false" />
+          <Property Name="RegionName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="CityName" Type="varchar" MaxLength="128" />
+          <Property Name="CountryCode" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="FlagPath" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ProfessionID" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PendingAdvertiserPayment">
+          <Key>
+            <PropertyRef Name="PendingPaymentDueID" />
+          </Key>
+          <Property Name="AdvertiserID" Type="uniqueidentifier" />
+          <Property Name="PaymentDueID" Type="int" Nullable="false" />
+          <Property Name="AdID" Type="int" Nullable="false" />
+          <Property Name="AdAmount" Type="float" Nullable="false" />
+          <Property Name="Date" Type="smalldatetime" Nullable="false" />
+          <Property Name="CurrencyCode" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="PaymentDue" Type="float" Nullable="false" />
+          <Property Name="PendingPaymentDueID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Status" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Positions">
+          <Key>
+            <PropertyRef Name="PositionID" />
+          </Key>
+          <Property Name="PositionID" Type="int" Nullable="false" />
+          <Property Name="PositionName" Type="nchar" Nullable="false" MaxLength="20" />
+          <Property Name="LCID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sections">
+          <Key>
+            <PropertyRef Name="SectionsID" />
+          </Key>
+          <Property Name="SectionsID" Type="int" Nullable="false" />
+          <Property Name="SectionName" Type="nchar" Nullable="false" MaxLength="20" />
+          <Property Name="LCID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sites">
+          <Key>
+            <PropertyRef Name="SiteID" />
+          </Key>
+          <Property Name="SiteID" Type="int" Nullable="false" />
+          <Property Name="SiteUrl" Type="nchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="TempAd">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="SiteID" Type="int" Nullable="false" />
+          <Property Name="SectionID" Type="int" Nullable="false" />
+          <Property Name="PositionID" Type="int" Nullable="false" />
+          <Property Name="NavigateUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="FormatID" Type="int" Nullable="false" />
+          <Property Name="ImageUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="AlternateText" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="Keyword" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Impressions" Type="int" Nullable="false" />
+          <Property Name="Width" Type="int" Nullable="false" />
+          <Property Name="Height" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" Nullable="false" />
+          <Property Name="AdTypeID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AdName" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+          <Property Name="GenderID" Type="int" Nullable="false" />
+          <Property Name="AgeRangeID" Type="int" Nullable="false" />
+          <Property Name="Zipcode" Type="nvarchar" Nullable="false" MaxLength="7" />
+          <Property Name="IndustryID" Type="int" Nullable="false" />
+          <Property Name="NumberofProfession" Type="int" Nullable="false" />
+          <Property Name="Profession" Type="text" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="RegionID" Type="int" Nullable="false" />
+          <Property Name="RegionName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="CityName" Type="varchar" MaxLength="128" />
+          <Property Name="CountryCode" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="FlagPath" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ProfessionID" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TempAd2">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="SiteID" Type="int" Nullable="false" />
+          <Property Name="SectionID" Type="int" Nullable="false" />
+          <Property Name="PositionID" Type="int" Nullable="false" />
+          <Property Name="NavigateUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="FormatID" Type="int" Nullable="false" />
+          <Property Name="ImageUrl" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="AlternateText" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="Keyword" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Impressions" Type="int" Nullable="false" />
+          <Property Name="Width" Type="int" Nullable="false" />
+          <Property Name="Height" Type="int" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" Nullable="false" />
+          <Property Name="AdTypeID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AdName" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+          <Property Name="GenderID" Type="int" Nullable="false" />
+          <Property Name="AgeRangeID" Type="int" Nullable="false" />
+          <Property Name="Country" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CountryCode" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="Region" Type="nvarchar" Nullable="false" MaxLength="40" />
+          <Property Name="RegionCode" Type="int" Nullable="false" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Zipcode" Type="nvarchar" Nullable="false" MaxLength="7" />
+          <Property Name="IndustryID" Type="int" Nullable="false" />
+          <Property Name="NumberofProfession" Type="int" Nullable="false" />
+          <Property Name="Profession" Type="text" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VisitorGeo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="AdId" Type="int" Nullable="false" />
+          <Property Name="IPAddress" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="CountryCode" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="Region" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="CityName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="PostalCode" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="AreaCode" Type="int" Nullable="false" />
+          <Property Name="MetroCode" Type="int" Nullable="false" />
+          <Property Name="Latitude" Type="float" Nullable="false" />
+          <Property Name="Longitude" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VisitorInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="AdId" Type="int" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="UserRole" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="RegionID" Type="int" Nullable="false" />
+          <Property Name="RegionName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="CityID" Type="int" Nullable="false" />
+          <Property Name="CityName" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="24" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="Gender" Type="int" Nullable="false" />
+          <Property Name="EmailAddress" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="PhotoPath" Type="ntext" Nullable="false" />
+          <Property Name="IndustryID" Type="int" Nullable="false" />
+          <Property Name="ProfessionID" Type="int" Nullable="false" />
+          <Property Name="LCID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VisitorPlatform">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="AdId" Type="int" />
+          <Property Name="RefURL" Type="nvarchar" MaxLength="2083" />
+          <Property Name="BrowserType" Type="nvarchar" MaxLength="20" />
+          <Property Name="BrowserName" Type="nvarchar" MaxLength="20" />
+          <Property Name="BrowserPlatform" Type="nvarchar" MaxLength="20" />
+          <Property Name="UserHostAddress" Type="varchar" MaxLength="15" />
+          <Property Name="UserHostName" Type="varchar" MaxLength="255" />
+          <Property Name="UserLanguage" Type="varchar" MaxLength="10" />
+          <Property Name="MobileDeviceManufacturer" Type="varchar" MaxLength="255" />
+          <Property Name="MobileDeviceModel" Type="varchar" MaxLength="255" />
+          <Property Name="DeviceType" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__21B6055D">
+          <End Role="aspnet_Applications" Type="AdDatabaseModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AdDatabaseModel.Store.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__22AA2996">
+          <End Role="aspnet_Users" Type="AdDatabaseModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AdDatabaseModel.Store.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__534D60F1">
+          <End Role="aspnet_Applications" Type="AdDatabaseModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="AdDatabaseModel.Store.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__59063A47">
+          <End Role="aspnet_Paths" Type="AdDatabaseModel.Store.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="AdDatabaseModel.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__5CD6CB2B">
+          <End Role="aspnet_Paths" Type="AdDatabaseModel.Store.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="AdDatabaseModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__5DCAEF64">
+          <End Role="aspnet_Users" Type="AdDatabaseModel.Store.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="AdDatabaseModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__36B12243">
+          <End Role="aspnet_Users" Type="AdDatabaseModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="AdDatabaseModel.Store.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__403A8C7D">
+          <End Role="aspnet_Applications" Type="AdDatabaseModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="AdDatabaseModel.Store.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__117F9D94">
+          <End Role="aspnet_Applications" Type="AdDatabaseModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="AdDatabaseModel.Store.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__RoleI__44FF419A">
+          <End Role="aspnet_Roles" Type="AdDatabaseModel.Store.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="AdDatabaseModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__UserI__440B1D61">
+          <End Role="aspnet_Users" Type="AdDatabaseModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="AdDatabaseModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AdDatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DB_33736_addatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdAudiences" EntityType="AdDatabaseModel.AdAudience" />
+          <EntitySet Name="AdGenerals" EntityType="AdDatabaseModel.AdGeneral" />
+          <EntitySet Name="AdLists" EntityType="AdDatabaseModel.AdList" />
+          <EntitySet Name="AdStats" EntityType="AdDatabaseModel.AdStat" />
+          <EntitySet Name="AdTotalStats" EntityType="AdDatabaseModel.AdTotalStat" />
+          <EntitySet Name="AdvertiserHackedPDTs" EntityType="AdDatabaseModel.AdvertiserHackedPDT" />
+          <EntitySet Name="AdvertiserPaymentDues" EntityType="AdDatabaseModel.AdvertiserPaymentDue" />
+          <EntitySet Name="AdvertiserSuccessfulIPNs" EntityType="AdDatabaseModel.AdvertiserSuccessfulIPN" />
+          <EntitySet Name="AdvertiserSuccessfulPDTs" EntityType="AdDatabaseModel.AdvertiserSuccessfulPDT" />
+          <EntitySet Name="AdvertiserSuspiciousIPNs" EntityType="AdDatabaseModel.AdvertiserSuspiciousIPN" />
+          <EntitySet Name="AgeRanges" EntityType="AdDatabaseModel.AgeRanx" />
+          <EntitySet Name="ArchivedAdvertiserPayments" EntityType="AdDatabaseModel.ArchivedAdvertiserPayment" />
+          <EntitySet Name="ArchivedAdvertiserSuccessfulIPNs" EntityType="AdDatabaseModel.ArchivedAdvertiserSuccessfulIPN" />
+          <EntitySet Name="ArchivedAdvertiserSuccessfulPDTs" EntityType="AdDatabaseModel.ArchivedAdvertiserSuccessfulPDT" />
+          <EntitySet Name="aspnet_Applications" EntityType="AdDatabaseModel.aspnet_Applications" />
+          <EntitySet Name="aspnet_Membership" EntityType="AdDatabaseModel.aspnet_Membership" />
+          <EntitySet Name="aspnet_Paths" EntityType="AdDatabaseModel.aspnet_Paths" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="AdDatabaseModel.aspnet_PersonalizationAllUsers" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="AdDatabaseModel.aspnet_PersonalizationPerUser" />
+          <EntitySet Name="aspnet_Profile" EntityType="AdDatabaseModel.aspnet_Profile" />
+          <EntitySet Name="aspnet_Roles" EntityType="AdDatabaseModel.aspnet_Roles" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="AdDatabaseModel.aspnet_SchemaVersions" />
+          <EntitySet Name="aspnet_Users" EntityType="AdDatabaseModel.aspnet_Users" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="AdDatabaseModel.aspnet_WebEvent_Events" />
+          <EntitySet Name="Formats" EntityType="AdDatabaseModel.Format" />
+          <EntitySet Name="Languages" EntityType="AdDatabaseModel.Language" />
+          <EntitySet Name="PendingAds" EntityType="AdDatabaseModel.PendingAd" />
+          <EntitySet Name="PendingAdvertiserPayments" EntityType="AdDatabaseModel.PendingAdvertiserPayment" />
+          <EntitySet Name="Positions" EntityType="AdDatabaseModel.Position" />
+          <EntitySet Name="Sections" EntityType="AdDatabaseModel.Section" />
+          <EntitySet Name="Sites" EntityType="AdDatabaseModel.Site" />
+          <EntitySet Name="TempAds" EntityType="AdDatabaseModel.TempAd" />
+          <EntitySet Name="TempAd2" EntityType="AdDatabaseModel.TempAd2" />
+          <EntitySet Name="VisitorGeos" EntityType="AdDatabaseModel.VisitorGeo" />
+          <EntitySet Name="VisitorInfoes" EntityType="AdDatabaseModel.VisitorInfo" />
+          <EntitySet Name="VisitorPlatforms" EntityType="AdDatabaseModel.VisitorPlatform" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__21B6055D" Association="AdDatabaseModel.FK__aspnet_Me__Appli__21B6055D">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__534D60F1" Association="AdDatabaseModel.FK__aspnet_Pa__Appli__534D60F1">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__403A8C7D" Association="AdDatabaseModel.FK__aspnet_Ro__Appli__403A8C7D">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__117F9D94" Association="AdDatabaseModel.FK__aspnet_Us__Appli__117F9D94">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__22AA2996" Association="AdDatabaseModel.FK__aspnet_Me__UserI__22AA2996">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__59063A47" Association="AdDatabaseModel.FK__aspnet_Pe__PathI__59063A47">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__5CD6CB2B" Association="AdDatabaseModel.FK__aspnet_Pe__PathI__5CD6CB2B">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__5DCAEF64" Association="AdDatabaseModel.FK__aspnet_Pe__UserI__5DCAEF64">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__36B12243" Association="AdDatabaseModel.FK__aspnet_Pr__UserI__36B12243">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="aspnet_UsersInRoles" Association="AdDatabaseModel.aspnet_UsersInRoles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AdAudience">
+          <Key>
+            <PropertyRef Name="AdID" />
+          </Key>
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+          <Property Name="LanguageID" Type="Int32" Nullable="false" />
+          <Property Name="GenderID" Type="Int32" Nullable="false" />
+          <Property Name="AgeRangeID" Type="Int32" Nullable="false" />
+          <Property Name="CountryID" Type="Int32" Nullable="false" />
+          <Property Name="CountryName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="Zipcode" Type="String" Nullable="false" MaxLength="7" Unicode="true" FixedLength="false" />
+          <Property Name="IndustryID" Type="Int32" Nullable="false" />
+          <Property Name="Profession" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="RegionID" Type="Int32" Nullable="false" />
+          <Property Name="RegionName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="CityID" Type="Int32" />
+          <Property Name="CityName" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="FlagPath" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ProfessionID" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="AdGeneral">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <Property Name="SectionID" Type="Int32" Nullable="false" />
+          <Property Name="PositionID" Type="Int32" Nullable="false" />
+          <Property Name="NavigateUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="FormatID" Type="Int32" Nullable="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AlternateText" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="Keyword" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Impressions" Type="Int32" Nullable="false" />
+          <Property Name="Width" Type="Int32" Nullable="false" />
+          <Property Name="Height" Type="Int32" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="AdTypeID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="AdName" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+          <Property Name="Completed" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="AdList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Width" Type="Int32" Nullable="false" />
+          <Property Name="Height" Type="Int32" Nullable="false" />
+          <Property Name="NavigateUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AlternateText" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="Keyword" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Impressions" Type="Int32" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="AdTypeID" Type="Int32" />
+          <Property Name="PositionID" Type="Int32" />
+          <Property Name="AdName" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="UserID" Type="Guid" />
+        </EntityType>
+        <EntityType Name="AdStat">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdId" Type="Int32" />
+          <Property Name="EntryDate" Type="DateTime" />
+          <Property Name="Type" Type="Int32" />
+        </EntityType>
+        <EntityType Name="AdTotalStat">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdId" Type="Int32" />
+          <Property Name="TotalImpression" Type="Int32" />
+          <Property Name="TotalClick" Type="Int32" />
+        </EntityType>
+        <EntityType Name="AdvertiserHackedPDT">
+          <Key>
+            <PropertyRef Name="PDTID" />
+          </Key>
+          <Property Name="PDTID" Type="Int32" Nullable="false" />
+          <Property Name="GrossTotal" Type="Double" Nullable="false" />
+          <Property Name="Invoice" Type="Int32" Nullable="false" />
+          <Property Name="PaymentStatus" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentFee" Type="Double" Nullable="false" />
+          <Property Name="BusinessEmail" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TxToken" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="ReceiverEmail" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="TransactionId" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Custom" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="SubscriberId" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="AdvertiserID" Type="Guid" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AdvertiserPaymentDue">
+          <Key>
+            <PropertyRef Name="PaymentDueID" />
+          </Key>
+          <Property Name="AdvertiserID" Type="Guid" />
+          <Property Name="PaymentDueID" Type="Int32" Nullable="false" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+          <Property Name="AdAmount" Type="Double" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="PaymentDue" Type="Double" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="AdvertiserSuccessfulIPN">
+          <Key>
+            <PropertyRef Name="IPNID" />
+          </Key>
+          <Property Name="IPNID" Type="Int32" Nullable="false" />
+          <Property Name="GrossTotal" Type="Double" />
+          <Property Name="Invoice" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentFee" Type="Double" />
+          <Property Name="BusinessEmail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReceiverEmail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ItemName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CurrencyCode" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="TransactionId" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Custom" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="AdvertiserID" Type="Guid" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+          <Property Name="TxType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="PendingReason" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentDate" Type="DateTime" />
+          <Property Name="Address" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Zip" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Country" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CountryCode" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="AddressStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerID" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="NotifyVersion" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerPhone" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Tax" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerBusinessName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="AdvertiserSuccessfulPDT">
+          <Key>
+            <PropertyRef Name="PDTID" />
+          </Key>
+          <Property Name="PDTID" Type="Int32" Nullable="false" />
+          <Property Name="GrossTotal" Type="Double" Nullable="false" />
+          <Property Name="Invoice" Type="Int32" Nullable="false" />
+          <Property Name="PaymentStatus" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentFee" Type="Double" Nullable="false" />
+          <Property Name="BusinessEmail" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="TxToken" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="ReceiverEmail" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="TransactionId" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Custom" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="subscriberId" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="AdvertiserID" Type="Guid" Nullable="false" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AdvertiserSuspiciousIPN">
+          <Key>
+            <PropertyRef Name="IPNID" />
+          </Key>
+          <Property Name="IPNID" Type="Int32" Nullable="false" />
+          <Property Name="GrossTotal" Type="Double" />
+          <Property Name="Invoice" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentFee" Type="Double" />
+          <Property Name="BusinessEmail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReceiverEmail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ItemName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CurrencyCode" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="TransactionId" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Custom" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="AdvertiserID" Type="Guid" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+          <Property Name="TxType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="PendingReason" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentDate" Type="DateTime" />
+          <Property Name="Address" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Zip" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Country" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CountryCode" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="AddressStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerID" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="NotifyVersion" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerPhone" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Tax" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerBusinessName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="AgeRanx">
+          <Key>
+            <PropertyRef Name="AgeRangeID" />
+          </Key>
+          <Property Name="AgeRangeID" Type="Int32" Nullable="false" />
+          <Property Name="AgeRangeValue" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="true" />
+          <Property Name="LCID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ArchivedAdvertiserPayment">
+          <Key>
+            <PropertyRef Name="ArchivedPaymentDue" />
+          </Key>
+          <Property Name="AdvertiserID" Type="Guid" />
+          <Property Name="PaymentDueID" Type="Int32" Nullable="false" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+          <Property Name="AdAmount" Type="Double" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="PaymentDue" Type="Double" Nullable="false" />
+          <Property Name="ArchivedPaymentDue" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="ArchivedAdvertiserSuccessfulIPN">
+          <Key>
+            <PropertyRef Name="IPNID" />
+          </Key>
+          <Property Name="IPNID" Type="Int32" Nullable="false" />
+          <Property Name="GrossTotal" Type="Double" />
+          <Property Name="Invoice" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentFee" Type="Double" />
+          <Property Name="BusinessEmail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReceiverEmail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ItemName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CurrencyCode" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="TransactionId" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Custom" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="AdvertiserID" Type="Guid" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+          <Property Name="TxType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="PendingReason" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentDate" Type="DateTime" />
+          <Property Name="Address" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Zip" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Country" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CountryCode" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="AddressStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerID" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="NotifyVersion" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerPhone" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Tax" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PayerBusinessName" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ArchivedAdvertiserSuccessfulPDT">
+          <Key>
+            <PropertyRef Name="PDTID" />
+          </Key>
+          <Property Name="PDTID" Type="Int32" Nullable="false" />
+          <Property Name="GrossTotal" Type="Double" Nullable="false" />
+          <Property Name="Invoice" Type="Int32" Nullable="false" />
+          <Property Name="PaymentStatus" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentFee" Type="Double" Nullable="false" />
+          <Property Name="BusinessEmail" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="TxToken" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="ReceiverEmail" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="TransactionId" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Custom" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="subscriberId" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="AdvertiserID" Type="Guid" Nullable="false" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="AdDatabaseModel.FK__aspnet_Me__Appli__21B6055D" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="AdDatabaseModel.FK__aspnet_Pa__Appli__534D60F1" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="AdDatabaseModel.FK__aspnet_Ro__Appli__403A8C7D" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AdDatabaseModel.FK__aspnet_Us__Appli__117F9D94" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+          <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AdDatabaseModel.FK__aspnet_Me__Appli__21B6055D" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AdDatabaseModel.FK__aspnet_Me__UserI__22AA2996" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredPath" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AdDatabaseModel.FK__aspnet_Pa__Appli__534D60F1" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="AdDatabaseModel.FK__aspnet_Pe__PathI__59063A47" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="AdDatabaseModel.FK__aspnet_Pe__PathI__5CD6CB2B" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="AdDatabaseModel.FK__aspnet_Pe__PathI__59063A47" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="AdDatabaseModel.FK__aspnet_Pe__PathI__5CD6CB2B" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AdDatabaseModel.FK__aspnet_Pe__UserI__5DCAEF64" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="PropertyNames" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PropertyValuesString" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PropertyValuesBinary" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AdDatabaseModel.FK__aspnet_Pr__UserI__36B12243" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AdDatabaseModel.FK__aspnet_Ro__Appli__403A8C7D" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AdDatabaseModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AdDatabaseModel.FK__aspnet_Us__Appli__117F9D94" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="AdDatabaseModel.FK__aspnet_Me__UserI__22AA2996" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="AdDatabaseModel.FK__aspnet_Pe__UserI__5DCAEF64" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+          <NavigationProperty Name="aspnet_Profile" Relationship="AdDatabaseModel.FK__aspnet_Pr__UserI__36B12243" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="AdDatabaseModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="true" />
+          <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" />
+          <Property Name="EventTime" Type="DateTime" Nullable="false" />
+          <Property Name="EventType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="EventSequence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+          <Property Name="EventOccurrence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+          <Property Name="EventCode" Type="Int32" Nullable="false" />
+          <Property Name="EventDetailCode" Type="Int32" Nullable="false" />
+          <Property Name="Message" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="RequestUrl" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="ExceptionType" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Details" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Format">
+          <Key>
+            <PropertyRef Name="FormatID" />
+          </Key>
+          <Property Name="FormatID" Type="Int32" Nullable="false" />
+          <Property Name="FormatName" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="LCID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Language">
+          <Key>
+            <PropertyRef Name="LanguageID" />
+          </Key>
+          <Property Name="LanguageID" Type="Int32" Nullable="false" />
+          <Property Name="Language1" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="PendingAd">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <Property Name="SectionID" Type="Int32" Nullable="false" />
+          <Property Name="PositionID" Type="Int32" Nullable="false" />
+          <Property Name="NavigateUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="FormatID" Type="Int32" Nullable="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AlternateText" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="Keyword" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Impressions" Type="Int32" Nullable="false" />
+          <Property Name="Width" Type="Int32" Nullable="false" />
+          <Property Name="Height" Type="Int32" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="AdTypeID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="AdName" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="LanguageID" Type="Int32" Nullable="false" />
+          <Property Name="GenderID" Type="Int32" Nullable="false" />
+          <Property Name="AgeRangeID" Type="Int32" Nullable="false" />
+          <Property Name="Zipcode" Type="String" Nullable="false" MaxLength="7" Unicode="true" FixedLength="false" />
+          <Property Name="IndustryID" Type="Int32" Nullable="false" />
+          <Property Name="NumberofProfession" Type="Int32" Nullable="false" />
+          <Property Name="Profession" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="CountryID" Type="Int32" Nullable="false" />
+          <Property Name="CountryName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="RegionID" Type="Int32" Nullable="false" />
+          <Property Name="RegionName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="CityID" Type="Int32" />
+          <Property Name="CityName" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="FlagPath" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ProfessionID" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="PendingAdvertiserPayment">
+          <Key>
+            <PropertyRef Name="PendingPaymentDueID" />
+          </Key>
+          <Property Name="AdvertiserID" Type="Guid" />
+          <Property Name="PaymentDueID" Type="Int32" Nullable="false" />
+          <Property Name="AdID" Type="Int32" Nullable="false" />
+          <Property Name="AdAmount" Type="Double" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="PaymentDue" Type="Double" Nullable="false" />
+          <Property Name="PendingPaymentDueID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Status" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Position">
+          <Key>
+            <PropertyRef Name="PositionID" />
+          </Key>
+          <Property Name="PositionID" Type="Int32" Nullable="false" />
+          <Property Name="PositionName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="LCID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Section">
+          <Key>
+            <PropertyRef Name="SectionsID" />
+          </Key>
+          <Property Name="SectionsID" Type="Int32" Nullable="false" />
+          <Property Name="SectionName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="LCID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Site">
+          <Key>
+            <PropertyRef Name="SiteID" />
+          </Key>
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <Property Name="SiteUrl" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="TempAd">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <Property Name="SectionID" Type="Int32" Nullable="false" />
+          <Property Name="PositionID" Type="Int32" Nullable="false" />
+          <Property Name="NavigateUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="FormatID" Type="Int32" Nullable="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AlternateText" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="Keyword" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Impressions" Type="Int32" Nullable="false" />
+          <Property Name="Width" Type="Int32" Nullable="false" />
+          <Property Name="Height" Type="Int32" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="AdTypeID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="AdName" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="LanguageID" Type="Int32" Nullable="false" />
+          <Property Name="GenderID" Type="Int32" Nullable="false" />
+          <Property Name="AgeRangeID" Type="Int32" Nullable="false" />
+          <Property Name="Zipcode" Type="String" Nullable="false" MaxLength="7" Unicode="true" FixedLength="false" />
+          <Property Name="IndustryID" Type="Int32" Nullable="false" />
+          <Property Name="NumberofProfession" Type="Int32" Nullable="false" />
+          <Property Name="Profession" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="CountryID" Type="Int32" Nullable="false" />
+          <Property Name="CountryName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="RegionID" Type="Int32" Nullable="false" />
+          <Property Name="RegionName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="CityID" Type="Int32" />
+          <Property Name="CityName" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="FlagPath" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ProfessionID" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TempAd2">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <Property Name="SectionID" Type="Int32" Nullable="false" />
+          <Property Name="PositionID" Type="Int32" Nullable="false" />
+          <Property Name="NavigateUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="FormatID" Type="Int32" Nullable="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AlternateText" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="Keyword" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Impressions" Type="Int32" Nullable="false" />
+          <Property Name="Width" Type="Int32" Nullable="false" />
+          <Property Name="Height" Type="Int32" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" />
+          <Property Name="AdTypeID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="AdName" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="LanguageID" Type="Int32" Nullable="false" />
+          <Property Name="GenderID" Type="Int32" Nullable="false" />
+          <Property Name="AgeRangeID" Type="Int32" Nullable="false" />
+          <Property Name="Country" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="CountryID" Type="Int32" Nullable="false" />
+          <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="Region" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="RegionCode" Type="Int32" Nullable="false" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Zipcode" Type="String" Nullable="false" MaxLength="7" Unicode="true" FixedLength="false" />
+          <Property Name="IndustryID" Type="Int32" Nullable="false" />
+          <Property Name="NumberofProfession" Type="Int32" Nullable="false" />
+          <Property Name="Profession" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VisitorGeo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="AdId" Type="Int32" Nullable="false" />
+          <Property Name="IPAddress" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="CountryName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="Region" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="CityName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="AreaCode" Type="Int32" Nullable="false" />
+          <Property Name="MetroCode" Type="Int32" Nullable="false" />
+          <Property Name="Latitude" Type="Double" Nullable="false" />
+          <Property Name="Longitude" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VisitorInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="AdId" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="UserRole" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="CountryID" Type="Int32" Nullable="false" />
+          <Property Name="CountryName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="RegionID" Type="Int32" Nullable="false" />
+          <Property Name="RegionName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="CityID" Type="Int32" Nullable="false" />
+          <Property Name="CityName" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="24" Unicode="true" FixedLength="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="Gender" Type="Int32" Nullable="false" />
+          <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PhotoPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="IndustryID" Type="Int32" Nullable="false" />
+          <Property Name="ProfessionID" Type="Int32" Nullable="false" />
+          <Property Name="LCID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VisitorPlatform">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="AdId" Type="Int32" />
+          <Property Name="RefURL" Type="String" MaxLength="2083" Unicode="true" FixedLength="false" />
+          <Property Name="BrowserType" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="BrowserName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="BrowserPlatform" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="UserHostAddress" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="UserHostName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="UserLanguage" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="MobileDeviceManufacturer" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="MobileDeviceModel" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="DeviceType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__21B6055D">
+          <End Role="aspnet_Applications" Type="AdDatabaseModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AdDatabaseModel.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__534D60F1">
+          <End Role="aspnet_Applications" Type="AdDatabaseModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="AdDatabaseModel.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__403A8C7D">
+          <End Role="aspnet_Applications" Type="AdDatabaseModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="AdDatabaseModel.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__117F9D94">
+          <End Role="aspnet_Applications" Type="AdDatabaseModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="AdDatabaseModel.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__22AA2996">
+          <End Role="aspnet_Users" Type="AdDatabaseModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AdDatabaseModel.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__59063A47">
+          <End Role="aspnet_Paths" Type="AdDatabaseModel.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="AdDatabaseModel.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__5CD6CB2B">
+          <End Role="aspnet_Paths" Type="AdDatabaseModel.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="AdDatabaseModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__5DCAEF64">
+          <End Role="aspnet_Users" Type="AdDatabaseModel.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="AdDatabaseModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__36B12243">
+          <End Role="aspnet_Users" Type="AdDatabaseModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="AdDatabaseModel.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="aspnet_UsersInRoles">
+          <End Role="aspnet_Roles" Type="AdDatabaseModel.aspnet_Roles" Multiplicity="*" />
+          <End Role="aspnet_Users" Type="AdDatabaseModel.aspnet_Users" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AdDatabaseModelStoreContainer" CdmEntityContainer="DB_33736_addatabaseEntities">
+          <EntitySetMapping Name="AdAudiences"><EntityTypeMapping TypeName="AdDatabaseModel.AdAudience"><MappingFragment StoreEntitySet="AdAudience">
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+            <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+            <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+            <ScalarProperty Name="AgeRangeID" ColumnName="AgeRangeID" />
+            <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+            <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+            <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+            <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+            <ScalarProperty Name="Profession" ColumnName="Profession" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+            <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+            <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+            <ScalarProperty Name="CityID" ColumnName="CityID" />
+            <ScalarProperty Name="CityName" ColumnName="CityName" />
+            <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+            <ScalarProperty Name="FlagPath" ColumnName="FlagPath" />
+            <ScalarProperty Name="ProfessionID" ColumnName="ProfessionID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdGenerals"><EntityTypeMapping TypeName="AdDatabaseModel.AdGeneral"><MappingFragment StoreEntitySet="AdGeneral">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+            <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+            <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+            <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+            <ScalarProperty Name="FormatID" ColumnName="FormatID" />
+            <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+            <ScalarProperty Name="AlternateText" ColumnName="AlternateText" />
+            <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+            <ScalarProperty Name="Impressions" ColumnName="Impressions" />
+            <ScalarProperty Name="Width" ColumnName="Width" />
+            <ScalarProperty Name="Height" ColumnName="Height" />
+            <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+            <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+            <ScalarProperty Name="AdTypeID" ColumnName="AdTypeID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="AdName" ColumnName="AdName" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+            <ScalarProperty Name="Completed" ColumnName="Completed" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdLists"><EntityTypeMapping TypeName="AdDatabaseModel.AdList"><MappingFragment StoreEntitySet="AdList">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+            <ScalarProperty Name="Width" ColumnName="Width" />
+            <ScalarProperty Name="Height" ColumnName="Height" />
+            <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+            <ScalarProperty Name="AlternateText" ColumnName="AlternateText" />
+            <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+            <ScalarProperty Name="Impressions" ColumnName="Impressions" />
+            <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+            <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+            <ScalarProperty Name="AdTypeID" ColumnName="AdTypeID" />
+            <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+            <ScalarProperty Name="AdName" ColumnName="AdName" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdStats"><EntityTypeMapping TypeName="AdDatabaseModel.AdStat"><MappingFragment StoreEntitySet="AdStats">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="AdId" ColumnName="AdId" />
+            <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+            <ScalarProperty Name="Type" ColumnName="Type" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdTotalStats"><EntityTypeMapping TypeName="AdDatabaseModel.AdTotalStat"><MappingFragment StoreEntitySet="AdTotalStats">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="AdId" ColumnName="AdId" />
+            <ScalarProperty Name="TotalImpression" ColumnName="TotalImpression" />
+            <ScalarProperty Name="TotalClick" ColumnName="TotalClick" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdvertiserHackedPDTs"><EntityTypeMapping TypeName="AdDatabaseModel.AdvertiserHackedPDT"><MappingFragment StoreEntitySet="AdvertiserHackedPDT">
+            <ScalarProperty Name="PDTID" ColumnName="PDTID" />
+            <ScalarProperty Name="GrossTotal" ColumnName="GrossTotal" />
+            <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+            <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="PaymentFee" ColumnName="PaymentFee" />
+            <ScalarProperty Name="BusinessEmail" ColumnName="BusinessEmail" />
+            <ScalarProperty Name="TxToken" ColumnName="TxToken" />
+            <ScalarProperty Name="ReceiverEmail" ColumnName="ReceiverEmail" />
+            <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+            <ScalarProperty Name="Custom" ColumnName="Custom" />
+            <ScalarProperty Name="SubscriberId" ColumnName="SubscriberId" />
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdvertiserPaymentDues"><EntityTypeMapping TypeName="AdDatabaseModel.AdvertiserPaymentDue"><MappingFragment StoreEntitySet="AdvertiserPaymentDue">
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="PaymentDueID" ColumnName="PaymentDueID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+            <ScalarProperty Name="AdAmount" ColumnName="AdAmount" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="PaymentDue" ColumnName="PaymentDue" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdvertiserSuccessfulIPNs"><EntityTypeMapping TypeName="AdDatabaseModel.AdvertiserSuccessfulIPN"><MappingFragment StoreEntitySet="AdvertiserSuccessfulIPN">
+            <ScalarProperty Name="IPNID" ColumnName="IPNID" />
+            <ScalarProperty Name="GrossTotal" ColumnName="GrossTotal" />
+            <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+            <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="PaymentFee" ColumnName="PaymentFee" />
+            <ScalarProperty Name="BusinessEmail" ColumnName="BusinessEmail" />
+            <ScalarProperty Name="ReceiverEmail" ColumnName="ReceiverEmail" />
+            <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+            <ScalarProperty Name="Custom" ColumnName="Custom" />
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+            <ScalarProperty Name="TxType" ColumnName="TxType" />
+            <ScalarProperty Name="PendingReason" ColumnName="PendingReason" />
+            <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Zip" ColumnName="Zip" />
+            <ScalarProperty Name="Country" ColumnName="Country" />
+            <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+            <ScalarProperty Name="AddressStatus" ColumnName="AddressStatus" />
+            <ScalarProperty Name="PayerStatus" ColumnName="PayerStatus" />
+            <ScalarProperty Name="PayerID" ColumnName="PayerID" />
+            <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+            <ScalarProperty Name="NotifyVersion" ColumnName="NotifyVersion" />
+            <ScalarProperty Name="PayerPhone" ColumnName="PayerPhone" />
+            <ScalarProperty Name="Tax" ColumnName="Tax" />
+            <ScalarProperty Name="PayerBusinessName" ColumnName="PayerBusinessName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdvertiserSuccessfulPDTs"><EntityTypeMapping TypeName="AdDatabaseModel.AdvertiserSuccessfulPDT"><MappingFragment StoreEntitySet="AdvertiserSuccessfulPDT">
+            <ScalarProperty Name="PDTID" ColumnName="PDTID" />
+            <ScalarProperty Name="GrossTotal" ColumnName="GrossTotal" />
+            <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+            <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="PaymentFee" ColumnName="PaymentFee" />
+            <ScalarProperty Name="BusinessEmail" ColumnName="BusinessEmail" />
+            <ScalarProperty Name="TxToken" ColumnName="TxToken" />
+            <ScalarProperty Name="ReceiverEmail" ColumnName="ReceiverEmail" />
+            <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+            <ScalarProperty Name="Custom" ColumnName="Custom" />
+            <ScalarProperty Name="subscriberId" ColumnName="subscriberId" />
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AdvertiserSuspiciousIPNs"><EntityTypeMapping TypeName="AdDatabaseModel.AdvertiserSuspiciousIPN"><MappingFragment StoreEntitySet="AdvertiserSuspiciousIPN">
+            <ScalarProperty Name="IPNID" ColumnName="IPNID" />
+            <ScalarProperty Name="GrossTotal" ColumnName="GrossTotal" />
+            <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+            <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="PaymentFee" ColumnName="PaymentFee" />
+            <ScalarProperty Name="BusinessEmail" ColumnName="BusinessEmail" />
+            <ScalarProperty Name="ReceiverEmail" ColumnName="ReceiverEmail" />
+            <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+            <ScalarProperty Name="Custom" ColumnName="Custom" />
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+            <ScalarProperty Name="TxType" ColumnName="TxType" />
+            <ScalarProperty Name="PendingReason" ColumnName="PendingReason" />
+            <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Zip" ColumnName="Zip" />
+            <ScalarProperty Name="Country" ColumnName="Country" />
+            <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+            <ScalarProperty Name="AddressStatus" ColumnName="AddressStatus" />
+            <ScalarProperty Name="PayerStatus" ColumnName="PayerStatus" />
+            <ScalarProperty Name="PayerID" ColumnName="PayerID" />
+            <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+            <ScalarProperty Name="NotifyVersion" ColumnName="NotifyVersion" />
+            <ScalarProperty Name="PayerPhone" ColumnName="PayerPhone" />
+            <ScalarProperty Name="Tax" ColumnName="Tax" />
+            <ScalarProperty Name="PayerBusinessName" ColumnName="PayerBusinessName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AgeRanges"><EntityTypeMapping TypeName="AdDatabaseModel.AgeRanx"><MappingFragment StoreEntitySet="AgeRanges">
+            <ScalarProperty Name="AgeRangeID" ColumnName="AgeRangeID" />
+            <ScalarProperty Name="AgeRangeValue" ColumnName="AgeRangeValue" />
+            <ScalarProperty Name="LCID" ColumnName="LCID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ArchivedAdvertiserPayments"><EntityTypeMapping TypeName="AdDatabaseModel.ArchivedAdvertiserPayment"><MappingFragment StoreEntitySet="ArchivedAdvertiserPayment">
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="PaymentDueID" ColumnName="PaymentDueID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+            <ScalarProperty Name="AdAmount" ColumnName="AdAmount" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="PaymentDue" ColumnName="PaymentDue" />
+            <ScalarProperty Name="ArchivedPaymentDue" ColumnName="ArchivedPaymentDue" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ArchivedAdvertiserSuccessfulIPNs"><EntityTypeMapping TypeName="AdDatabaseModel.ArchivedAdvertiserSuccessfulIPN"><MappingFragment StoreEntitySet="ArchivedAdvertiserSuccessfulIPN">
+            <ScalarProperty Name="IPNID" ColumnName="IPNID" />
+            <ScalarProperty Name="GrossTotal" ColumnName="GrossTotal" />
+            <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+            <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="PaymentFee" ColumnName="PaymentFee" />
+            <ScalarProperty Name="BusinessEmail" ColumnName="BusinessEmail" />
+            <ScalarProperty Name="ReceiverEmail" ColumnName="ReceiverEmail" />
+            <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+            <ScalarProperty Name="Custom" ColumnName="Custom" />
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+            <ScalarProperty Name="TxType" ColumnName="TxType" />
+            <ScalarProperty Name="PendingReason" ColumnName="PendingReason" />
+            <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Zip" ColumnName="Zip" />
+            <ScalarProperty Name="Country" ColumnName="Country" />
+            <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+            <ScalarProperty Name="AddressStatus" ColumnName="AddressStatus" />
+            <ScalarProperty Name="PayerStatus" ColumnName="PayerStatus" />
+            <ScalarProperty Name="PayerID" ColumnName="PayerID" />
+            <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+            <ScalarProperty Name="NotifyVersion" ColumnName="NotifyVersion" />
+            <ScalarProperty Name="PayerPhone" ColumnName="PayerPhone" />
+            <ScalarProperty Name="Tax" ColumnName="Tax" />
+            <ScalarProperty Name="PayerBusinessName" ColumnName="PayerBusinessName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ArchivedAdvertiserSuccessfulPDTs"><EntityTypeMapping TypeName="AdDatabaseModel.ArchivedAdvertiserSuccessfulPDT"><MappingFragment StoreEntitySet="ArchivedAdvertiserSuccessfulPDT">
+            <ScalarProperty Name="PDTID" ColumnName="PDTID" />
+            <ScalarProperty Name="GrossTotal" ColumnName="GrossTotal" />
+            <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+            <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="PaymentFee" ColumnName="PaymentFee" />
+            <ScalarProperty Name="BusinessEmail" ColumnName="BusinessEmail" />
+            <ScalarProperty Name="TxToken" ColumnName="TxToken" />
+            <ScalarProperty Name="ReceiverEmail" ColumnName="ReceiverEmail" />
+            <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+            <ScalarProperty Name="Custom" ColumnName="Custom" />
+            <ScalarProperty Name="subscriberId" ColumnName="subscriberId" />
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Applications"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_Applications"><MappingFragment StoreEntitySet="aspnet_Applications">
+            <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+            <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Membership"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_Membership"><MappingFragment StoreEntitySet="aspnet_Membership">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+            <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+            <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+            <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+            <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+            <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+            <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+            <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+            <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+            <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+            <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+            <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+            <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+            <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Paths"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_Paths"><MappingFragment StoreEntitySet="aspnet_Paths">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="PathId" ColumnName="PathId" />
+            <ScalarProperty Name="Path" ColumnName="Path" />
+            <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationAllUsers"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_PersonalizationAllUsers"><MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+            <ScalarProperty Name="PathId" ColumnName="PathId" />
+            <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+            <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationPerUser"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_PersonalizationPerUser"><MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="PathId" ColumnName="PathId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+            <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Profile"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_Profile"><MappingFragment StoreEntitySet="aspnet_Profile">
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+            <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+            <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+            <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Roles"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_Roles"><MappingFragment StoreEntitySet="aspnet_Roles">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+            <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_SchemaVersions"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_SchemaVersions"><MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+            <ScalarProperty Name="Feature" ColumnName="Feature" />
+            <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+            <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Users"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_Users"><MappingFragment StoreEntitySet="aspnet_Users">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+            <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+            <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+            <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_WebEvent_Events"><EntityTypeMapping TypeName="AdDatabaseModel.aspnet_WebEvent_Events"><MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+            <ScalarProperty Name="EventId" ColumnName="EventId" />
+            <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+            <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+            <ScalarProperty Name="EventType" ColumnName="EventType" />
+            <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+            <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+            <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+            <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+            <ScalarProperty Name="Message" ColumnName="Message" />
+            <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+            <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+            <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+            <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+            <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+            <ScalarProperty Name="Details" ColumnName="Details" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Formats"><EntityTypeMapping TypeName="AdDatabaseModel.Format"><MappingFragment StoreEntitySet="Formats">
+            <ScalarProperty Name="FormatID" ColumnName="FormatID" />
+            <ScalarProperty Name="FormatName" ColumnName="FormatName" />
+            <ScalarProperty Name="LCID" ColumnName="LCID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Languages"><EntityTypeMapping TypeName="AdDatabaseModel.Language"><MappingFragment StoreEntitySet="Languages">
+            <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+            <ScalarProperty Name="Language1" ColumnName="Language" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PendingAds"><EntityTypeMapping TypeName="AdDatabaseModel.PendingAd"><MappingFragment StoreEntitySet="PendingAd">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+            <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+            <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+            <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+            <ScalarProperty Name="FormatID" ColumnName="FormatID" />
+            <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+            <ScalarProperty Name="AlternateText" ColumnName="AlternateText" />
+            <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+            <ScalarProperty Name="Impressions" ColumnName="Impressions" />
+            <ScalarProperty Name="Width" ColumnName="Width" />
+            <ScalarProperty Name="Height" ColumnName="Height" />
+            <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+            <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+            <ScalarProperty Name="AdTypeID" ColumnName="AdTypeID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="AdName" ColumnName="AdName" />
+            <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+            <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+            <ScalarProperty Name="AgeRangeID" ColumnName="AgeRangeID" />
+            <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+            <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+            <ScalarProperty Name="NumberofProfession" ColumnName="NumberofProfession" />
+            <ScalarProperty Name="Profession" ColumnName="Profession" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+            <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+            <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+            <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+            <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+            <ScalarProperty Name="CityID" ColumnName="CityID" />
+            <ScalarProperty Name="CityName" ColumnName="CityName" />
+            <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+            <ScalarProperty Name="FlagPath" ColumnName="FlagPath" />
+            <ScalarProperty Name="ProfessionID" ColumnName="ProfessionID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PendingAdvertiserPayments"><EntityTypeMapping TypeName="AdDatabaseModel.PendingAdvertiserPayment"><MappingFragment StoreEntitySet="PendingAdvertiserPayment">
+            <ScalarProperty Name="AdvertiserID" ColumnName="AdvertiserID" />
+            <ScalarProperty Name="PaymentDueID" ColumnName="PaymentDueID" />
+            <ScalarProperty Name="AdID" ColumnName="AdID" />
+            <ScalarProperty Name="AdAmount" ColumnName="AdAmount" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="PaymentDue" ColumnName="PaymentDue" />
+            <ScalarProperty Name="PendingPaymentDueID" ColumnName="PendingPaymentDueID" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Positions"><EntityTypeMapping TypeName="AdDatabaseModel.Position"><MappingFragment StoreEntitySet="Positions">
+            <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+            <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+            <ScalarProperty Name="LCID" ColumnName="LCID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Sections"><EntityTypeMapping TypeName="AdDatabaseModel.Section"><MappingFragment StoreEntitySet="Sections">
+            <ScalarProperty Name="SectionsID" ColumnName="SectionsID" />
+            <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+            <ScalarProperty Name="LCID" ColumnName="LCID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Sites"><EntityTypeMapping TypeName="AdDatabaseModel.Site"><MappingFragment StoreEntitySet="Sites">
+            <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+            <ScalarProperty Name="SiteUrl" ColumnName="SiteUrl" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TempAds"><EntityTypeMapping TypeName="AdDatabaseModel.TempAd"><MappingFragment StoreEntitySet="TempAd">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+            <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+            <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+            <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+            <ScalarProperty Name="FormatID" ColumnName="FormatID" />
+            <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+            <ScalarProperty Name="AlternateText" ColumnName="AlternateText" />
+            <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+            <ScalarProperty Name="Impressions" ColumnName="Impressions" />
+            <ScalarProperty Name="Width" ColumnName="Width" />
+            <ScalarProperty Name="Height" ColumnName="Height" />
+            <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+            <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+            <ScalarProperty Name="AdTypeID" ColumnName="AdTypeID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="AdName" ColumnName="AdName" />
+            <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+            <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+            <ScalarProperty Name="AgeRangeID" ColumnName="AgeRangeID" />
+            <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+            <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+            <ScalarProperty Name="NumberofProfession" ColumnName="NumberofProfession" />
+            <ScalarProperty Name="Profession" ColumnName="Profession" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+            <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+            <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+            <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+            <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+            <ScalarProperty Name="CityID" ColumnName="CityID" />
+            <ScalarProperty Name="CityName" ColumnName="CityName" />
+            <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+            <ScalarProperty Name="FlagPath" ColumnName="FlagPath" />
+            <ScalarProperty Name="ProfessionID" ColumnName="ProfessionID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TempAd2"><EntityTypeMapping TypeName="AdDatabaseModel.TempAd2"><MappingFragment StoreEntitySet="TempAd2">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+            <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+            <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+            <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+            <ScalarProperty Name="FormatID" ColumnName="FormatID" />
+            <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+            <ScalarProperty Name="AlternateText" ColumnName="AlternateText" />
+            <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+            <ScalarProperty Name="Impressions" ColumnName="Impressions" />
+            <ScalarProperty Name="Width" ColumnName="Width" />
+            <ScalarProperty Name="Height" ColumnName="Height" />
+            <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+            <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+            <ScalarProperty Name="AdTypeID" ColumnName="AdTypeID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="AdName" ColumnName="AdName" />
+            <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+            <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+            <ScalarProperty Name="AgeRangeID" ColumnName="AgeRangeID" />
+            <ScalarProperty Name="Country" ColumnName="Country" />
+            <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+            <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+            <ScalarProperty Name="Region" ColumnName="Region" />
+            <ScalarProperty Name="RegionCode" ColumnName="RegionCode" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+            <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+            <ScalarProperty Name="NumberofProfession" ColumnName="NumberofProfession" />
+            <ScalarProperty Name="Profession" ColumnName="Profession" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="VisitorGeos"><EntityTypeMapping TypeName="AdDatabaseModel.VisitorGeo"><MappingFragment StoreEntitySet="VisitorGeo">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="AdId" ColumnName="AdId" />
+            <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+            <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+            <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+            <ScalarProperty Name="Region" ColumnName="Region" />
+            <ScalarProperty Name="CityName" ColumnName="CityName" />
+            <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+            <ScalarProperty Name="AreaCode" ColumnName="AreaCode" />
+            <ScalarProperty Name="MetroCode" ColumnName="MetroCode" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="VisitorInfoes"><EntityTypeMapping TypeName="AdDatabaseModel.VisitorInfo"><MappingFragment StoreEntitySet="VisitorInfo">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="AdId" ColumnName="AdId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+            <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+            <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+            <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+            <ScalarProperty Name="CityID" ColumnName="CityID" />
+            <ScalarProperty Name="CityName" ColumnName="CityName" />
+            <ScalarProperty Name="Phone" ColumnName="Phone" />
+            <ScalarProperty Name="Age" ColumnName="Age" />
+            <ScalarProperty Name="Gender" ColumnName="Gender" />
+            <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+            <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
+            <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+            <ScalarProperty Name="ProfessionID" ColumnName="ProfessionID" />
+            <ScalarProperty Name="LCID" ColumnName="LCID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="VisitorPlatforms"><EntityTypeMapping TypeName="AdDatabaseModel.VisitorPlatform"><MappingFragment StoreEntitySet="VisitorPlatform">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="AdId" ColumnName="AdId" />
+            <ScalarProperty Name="RefURL" ColumnName="RefURL" />
+            <ScalarProperty Name="BrowserType" ColumnName="BrowserType" />
+            <ScalarProperty Name="BrowserName" ColumnName="BrowserName" />
+            <ScalarProperty Name="BrowserPlatform" ColumnName="BrowserPlatform" />
+            <ScalarProperty Name="UserHostAddress" ColumnName="UserHostAddress" />
+            <ScalarProperty Name="UserHostName" ColumnName="UserHostName" />
+            <ScalarProperty Name="UserLanguage" ColumnName="UserLanguage" />
+            <ScalarProperty Name="MobileDeviceManufacturer" ColumnName="MobileDeviceManufacturer" />
+            <ScalarProperty Name="MobileDeviceModel" ColumnName="MobileDeviceModel" />
+            <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="AdDatabaseModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+            <EndProperty Name="aspnet_Roles">
+              <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="aspnet_Users">
+              <ScalarProperty Name="UserId" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="AdDatabaseEntities">
+        <EntityTypeShape EntityType="AdDatabaseModel.AdAudience" Width="1.5" PointX="0.75" PointY="0.75" Height="4.2879036458333326" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdGeneral" Width="1.5" PointX="7.75" PointY="0.75" Height="4.8648079427083326" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdList" Width="1.5" PointX="9.75" PointY="0.75" Height="3.9033007812499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdStat" Width="1.5" PointX="2.75" PointY="0.75" Height="1.7879850260416657" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdTotalStat" Width="1.5" PointX="4.75" PointY="0.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdvertiserHackedPDT" Width="1.5" PointX="2.75" PointY="9.75" Height="4.2879036458333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdvertiserPaymentDue" Width="1.5" PointX="8.75" PointY="6.75" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdvertiserSuccessfulIPN" Width="1.5" PointX="11.75" PointY="0.75" Height="7.1724251302083353" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdvertiserSuccessfulPDT" Width="1.5" PointX="12.75" PointY="8.75" Height="4.2879036458333353" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AdvertiserSuspiciousIPN" Width="1.5" PointX="13.75" PointY="0.75" Height="7.1724251302083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.AgeRanx" Width="1.5" PointX="14.75" PointY="8.75" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.ArchivedAdvertiserPayment" Width="1.5" PointX="14.75" PointY="11.75" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.ArchivedAdvertiserSuccessfulIPN" Width="1.5" PointX="15.75" PointY="0.75" Height="7.1724251302083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.ArchivedAdvertiserSuccessfulPDT" Width="1.5" PointX="5.75" PointY="15.75" Height="4.2879036458333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="7.875" Height="2.5571907552083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_Membership" Width="1.5" PointX="6" PointY="9.5" Height="5.4417122395833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_Paths" Width="1.5" PointX="3" PointY="6.375" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="5.25" PointY="6.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="5.25" PointY="3.375" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_Profile" Width="1.5" PointX="10.5" PointY="11.875" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_Roles" Width="1.5" PointX="3" PointY="15.75" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_SchemaVersions" Width="1.5" PointX="7.75" PointY="15.75" Height="1.5956835937500085" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_Users" Width="1.5" PointX="8.25" PointY="11.375" Height="3.3263964843750102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.aspnet_WebEvent_Events" Width="1.5" PointX="9.75" PointY="15.75" Height="3.9033007812500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.Format" Width="1.5" PointX="11.75" PointY="15.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.Language" Width="1.5" PointX="13.75" PointY="15.75" Height="1.4033821614583246" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.PendingAd" Width="1.5" PointX="15.75" PointY="15.75" Height="7.5570279947916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.PendingAdvertiserPayment" Width="1.5" PointX="16.75" PointY="8.75" Height="2.7494921875000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.Position" Width="1.5" PointX="16.75" PointY="12.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.Section" Width="1.5" PointX="17.75" PointY="0.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.Site" Width="1.5" PointX="17.75" PointY="3.75" Height="1.4033821614583246" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.TempAd" Width="1.5" PointX="17.75" PointY="15.75" Height="7.5570279947916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.TempAd2" Width="1.5" PointX="18.75" PointY="6.75" Height="6.9801236979166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.VisitorGeo" Width="1.5" PointX="11.75" PointY="18.75" Height="3.3263964843750102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.VisitorInfo" Width="1.5" PointX="19.75" PointY="0.75" Height="5.05710937500001" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdDatabaseModel.VisitorPlatform" Width="1.5" PointX="0.75" PointY="19.75" Height="3.3263964843750102" IsExpanded="true" />
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Me__Appli__21B6055D" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="9.59375" />
+          <ConnectorPoint PointX="6" PointY="9.59375" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Pa__Appli__534D60F1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.3074446614583337" />
+          <ConnectorPoint PointX="3" PointY="8.3074446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Ro__Appli__403A8C7D" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="10.432190755208339" />
+          <ConnectorPoint PointX="1.5" PointY="16.932444661458334" />
+          <ConnectorPoint PointX="3" PointY="16.932444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Us__Appli__117F9D94" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="9.4035953776041659" />
+          <ConnectorPoint PointX="7.791666666666667" PointY="9.4035953776041659" />
+          <ConnectorPoint PointX="7.958333333333333" PointY="9.4035953776041659" />
+          <ConnectorPoint PointX="8.46875" PointY="9.4035953776041659" />
+          <ConnectorPoint PointX="8.46875" PointY="11.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Me__UserI__22AA2996" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.25" PointY="13.038198242187505" />
+          <ConnectorPoint PointX="7.5" PointY="13.038198242187505" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Pe__PathI__59063A47" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="7.6439925130208337" />
+          <ConnectorPoint PointX="5.25" PointY="7.6439925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Pe__PathI__5CD6CB2B" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="6.375" />
+          <ConnectorPoint PointX="3.75" PointY="4.5574446614583337" />
+          <ConnectorPoint PointX="5.25" PointY="4.5574446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Pe__UserI__5DCAEF64" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.25" PointY="11.375" />
+          <ConnectorPoint PointX="7.875" PointY="11" />
+          <ConnectorPoint PointX="7.875" PointY="6.1148893229166674" />
+          <ConnectorPoint PointX="7.125" PointY="6.1148893229166674" />
+          <ConnectorPoint PointX="6.75" PointY="5.7398893229166674" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.FK__aspnet_Pr__UserI__36B12243" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="12.961293945312502" />
+          <ConnectorPoint PointX="10.5" PointY="12.961293945312502" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdDatabaseModel.aspnet_UsersInRoles" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="15.751152846153847" />
+          <ConnectorPoint PointX="4.8761528461538468" PointY="15.375" />
+          <ConnectorPoint PointX="9" PointY="15.375" />
+          <ConnectorPoint PointX="9" PointY="14.70139648437501" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

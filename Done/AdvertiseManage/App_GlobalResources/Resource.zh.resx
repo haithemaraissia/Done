@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUS" xml:space="preserve">
+    <value>关于我们</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>帐户</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>帐户信息</value>
+  </data>
+  <data name="Advertise" xml:space="preserve">
+    <value>广告</value>
+  </data>
+  <data name="Advertiser" xml:space="preserve">
+    <value>广告客户</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>年龄</value>
+  </data>
+  <data name="AgeLimitation" xml:space="preserve">
+    <value>年龄应在18和105</value>
+  </data>
+  <data name="AgeRequiredFieldValidator" xml:space="preserve">
+    <value>年龄要求</value>
+  </data>
+  <data name="AnswerPasswordQuestion" xml:space="preserve">
+    <value>请回答您的密码提示问题：</value>
+  </data>
+  <data name="APIDocumentation" xml:space="preserve">
+    <value>API文档</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value> 阿拉伯语</value>
+  </data>
+  <data name="BackToProfileLinkButton" xml:space="preserve">
+    <value>返回信息</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>业务</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Cellphone" xml:space="preserve">
+    <value>手机</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="ChangePhoto" xml:space="preserve">
+    <value>更改照片</value>
+  </data>
+  <data name="ChangeYourPassword" xml:space="preserve">
+    <value>更换你的密码</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value> 中国的</value>
+  </data>
+  <data name="CityName" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="CivilUnion" xml:space="preserve">
+    <value>土木工程联盟</value>
+  </data>
+  <data name="ComingSoon" xml:space="preserve">
+    <value>即将推出</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="CompanyWebsite" xml:space="preserve">
+    <value>公司网站</value>
+  </data>
+  <data name="ConfirmationLabel" xml:space="preserve">
+    <value>你确定要删除您的图片吗？</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>确认新密码</value>
+  </data>
+  <data name="ConfirmNewPasswordRequired" xml:space="preserve">
+    <value>确认新密码是必需的。</value>
+  </data>
+  <data name="ConfirmNewPasswordRequiredValidator" xml:space="preserve">
+    <value>确认新密码是必需的。</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>联系我们</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>版权</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="CreateNewaccount" xml:space="preserve">
+    <value>创建新帐号</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DeleteProfile" xml:space="preserve">
+    <value>删除配置文件</value>
+  </data>
+  <data name="DeleteProfileQuestion" xml:space="preserve">
+    <value>你确定要删除您的个人资料吗？</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>开发人员</value>
+  </data>
+  <data name="Divorced" xml:space="preserve">
+    <value>离婚</value>
+  </data>
+  <data name="EBlast" xml:space="preserve">
+    <value>EBlast</value>
+  </data>
+  <data name="EditProfile" xml:space="preserve">
+    <value>编辑个人资料</value>
+  </data>
+  <data name="Eighteen" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>电邮地址</value>
+  </data>
+  <data name="EmailAddressRegularExpressionValidator" xml:space="preserve">
+    <value>电子邮件地址无效</value>
+  </data>
+  <data name="EmailAddressRequiredFieldValidator" xml:space="preserve">
+    <value>电子邮件地址是必需的</value>
+  </data>
+  <data name="EmailAddressToolTip" xml:space="preserve">
+    <value>电子邮件地址无效</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value> 英语</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Facebook的</value>
+  </data>
+  <data name="FacebookError" xml:space="preserve">
+    <value>请输入有效的Facebook URL</value>
+  </data>
+  <data name="FailureRegistration" xml:space="preserve">
+    <value>没有创建帐户。请再试一次。</value>
+  </data>
+  <data name="FavoritePet" xml:space="preserve">
+    <value>最喜欢的宠物</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="FirstNameToolTip" xml:space="preserve">
+    <value>第一个名字是必需的</value>
+  </data>
+  <data name="FirstNameValidator" xml:space="preserve">
+    <value>输入您的姓名</value>
+  </data>
+  <data name="Follow" xml:space="preserve">
+    <value>遵循</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>忘记密码</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value> 法国人</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value> 德国的</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="HelpUsCustomizeyourExperience" xml:space="preserve">
+    <value>帮助我们定制您的体验</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>家</value>
+  </data>
+  <data name="IndustryLabel" xml:space="preserve">
+    <value>行业</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value> 日本</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>语</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="LastNameRequiredFieldValidator" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="LastNameToolTip" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="LinkedIn" xml:space="preserve">
+    <value>LinkedIn</value>
+  </data>
+  <data name="LinkedInError" xml:space="preserve">
+    <value>请输入一个有效的LinkedIn URL</value>
+  </data>
+  <data name="LoggedIn" xml:space="preserve">
+    <value>记住登录状态</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="ManagePhoto" xml:space="preserve">
+    <value>管理照片</value>
+  </data>
+  <data name="MaritalStatus" xml:space="preserve">
+    <value>婚姻状况</value>
+  </data>
+  <data name="Married" xml:space="preserve">
+    <value>结婚了</value>
+  </data>
+  <data name="MobilePhoneNumber" xml:space="preserve">
+    <value>手机号码</value>
+  </data>
+  <data name="MobilePhoneRegularExpressionValidator" xml:space="preserve">
+    <value>输入数字，或分号没有任何hyphons的（1231231234）</value>
+  </data>
+  <data name="MobilePhoneToolTip" xml:space="preserve">
+    <value>输入数字，或分号没有任何hyphons的（1231231234）</value>
+  </data>
+  <data name="MotherMaidenName" xml:space="preserve">
+    <value>母亲的婚前姓氏</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>新密码：</value>
+  </data>
+  <data name="NewPasswordCharacter" xml:space="preserve">
+    <value>字符的长度。</value>
+  </data>
+  <data name="NewPasswordMessage" xml:space="preserve">
+    <value>新的密码是必需的，是最低限度的</value>
+  </data>
+  <data name="NewPasswordRequired" xml:space="preserve">
+    <value>新密码是必需的。</value>
+  </data>
+  <data name="Newsletter" xml:space="preserve">
+    <value>通讯</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>旧密码：</value>
+  </data>
+  <data name="OldPasswordRequired" xml:space="preserve">
+    <value>旧密码是必需的。</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Password1" xml:space="preserve">
+    <value>密码：</value>
+  </data>
+  <data name="PasswordChangeSuccess" xml:space="preserve">
+    <value>您的密码已修改成功。</value>
+  </data>
+  <data name="PasswordMatchMessage" xml:space="preserve">
+    <value>密码和确认密码必须一致。</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>密码是必需的。</value>
+  </data>
+  <data name="PasswordRequiredValidator" xml:space="preserve">
+    <value>密码是必需的。</value>
+  </data>
+  <data name="PasswordSent" xml:space="preserve">
+    <value>您的密码已发送到您的电子邮件地址</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>隐私</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="Profession" xml:space="preserve">
+    <value>职业</value>
+  </data>
+  <data name="ProfileInformation" xml:space="preserve">
+    <value>个人信息</value>
+  </data>
+  <data name="ProjectRequirementContentSizeLabel" xml:space="preserve">
+    <value>文件大小应小于4MB</value>
+  </data>
+  <data name="ProjectRequirementContentTypeLabel" xml:space="preserve">
+    <value>只有图像是允许的：（JEPG，GIF，PNG，BMP，TIFF）</value>
+  </data>
+  <data name="RecoverYourPassword" xml:space="preserve">
+    <value>恢复您的密码</value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value> 俄</value>
+  </data>
+  <data name="SecurityAnswer" xml:space="preserve">
+    <value>安全答案</value>
+  </data>
+  <data name="SecurityAnswerRequired" xml:space="preserve">
+    <value>安全答案是必需的。</value>
+  </data>
+  <data name="SecurityAnswerToolTip" xml:space="preserve">
+    <value>安全答案是必需的。</value>
+  </data>
+  <data name="SecurityQuestionLabel" xml:space="preserve">
+    <value>安全问题</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="SendAnswerByMail" xml:space="preserve">
+    <value>通过邮件发送应答</value>
+  </data>
+  <data name="Separated" xml:space="preserve">
+    <value>分居</value>
+  </data>
+  <data name="Single" xml:space="preserve">
+    <value>单</value>
+  </data>
+  <data name="SiteMap" xml:space="preserve">
+    <value>网站地图</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value> 西班牙的</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>订阅</value>
+  </data>
+  <data name="Subscription" xml:space="preserve">
+    <value>订阅</value>
+  </data>
+  <data name="SuccessfulRegistration" xml:space="preserve">
+    <value>该帐户已成功创建。</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>叽叽喳喳</value>
+  </data>
+  <data name="TwitterError" xml:space="preserve">
+    <value>请输入一个有效的Twitter的URL</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="UseFormMessage" xml:space="preserve">
+    <value>使用下面的表格，更改您的密码。</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="UserName1" xml:space="preserve">
+    <value>用户名：</value>
+  </data>
+  <data name="UserNameRequiredFieldValidator" xml:space="preserve">
+    <value>用户名称是必需的。</value>
+  </data>
+  <data name="ValidEmail" xml:space="preserve">
+    <value>请输入正确的电子邮件地址</value>
+  </data>
+  <data name="ValidURL" xml:space="preserve">
+    <value>请输入一个有效的URL</value>
+  </data>
+  <data name="ViewProfile" xml:space="preserve">
+    <value>查看资料</value>
+  </data>
+  <data name="Whowasyourchildhoodhero" xml:space="preserve">
+    <value>你的童年英雄是谁？</value>
+  </data>
+  <data name="Widowed" xml:space="preserve">
+    <value>寡</value>
+  </data>
+  <data name="Yourfavoritepasttime" xml:space="preserve">
+    <value>你最喜欢的消遣？</value>
+  </data>
+  <data name="Yourfirstcar" xml:space="preserve">
+    <value>你的第一辆车？</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>邮编</value>
+  </data>
+  <data name="PasswordRecoveryUrl" xml:space="preserve">
+    <value>EmailTemplates/PasswordRecoveryCn.htm</value>
+  </data>
+  <data name="RecoverySentMessage" xml:space="preserve">
+    <value>你的密码恢复已发送。请检查您的电子邮件。谢谢。</value>
+  </data>
+  <data name="AdvertiseManagement" xml:space="preserve">
+    <value>广告管理</value>
+  </data>
+  <data name="Thisemailconfirmsthatyourpasswordhasbeenchanged" xml:space="preserve">
+    <value>此电子邮件确认您的密码已被更改。</value>
+  </data>
+  <data name="Tologonto" xml:space="preserve">
+    <value>要登录到</value>
+  </data>
+  <data name="usethefollowingcredentials" xml:space="preserve">
+    <value>使用以下凭据：</value>
+  </data>
+  <data name="YourPasswordHasBeenReset" xml:space="preserve">
+    <value>您的密码已重置！</value>
+  </data>
+  <data name="ThankYou" xml:space="preserve">
+    <value>谢谢。</value>
+  </data>
+</root>

@@ -1,0 +1,16 @@
+﻿-1-Use the same database for the advertiser
+If Website success, then create a new database and make the users login into different database while managing the user of the advertise database.
+
+-2-Adminstrator ;
+Use username and Password for the adminstrator in the advertise database:
+Admin
+aaa_123
+
+
+-3-The Future Correct Way;
+Continue from Future
+Create the function helper to extract the profile property and bind to the class used in advertiser
+
+-4-Common/TemplateMainUpperButton
+Update to the right url once advertiser is completed
+<li><a href="#">Advertiser External Link</a></li>

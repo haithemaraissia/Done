@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUS" xml:space="preserve">
+    <value>私たちについて</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>アカウント</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>アカウント情報</value>
+  </data>
+  <data name="Advertise" xml:space="preserve">
+    <value>アドバタイズ</value>
+  </data>
+  <data name="Advertiser" xml:space="preserve">
+    <value>広告主</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>年齢</value>
+  </data>
+  <data name="AgeLimitation" xml:space="preserve">
+    <value>年齢は18と105の間でなければなりません</value>
+  </data>
+  <data name="AgeRequiredFieldValidator" xml:space="preserve">
+    <value>年齢が必要です</value>
+  </data>
+  <data name="AnswerPasswordQuestion" xml:space="preserve">
+    <value>あなたのパスワードの質問に答えてください：</value>
+  </data>
+  <data name="APIDocumentation" xml:space="preserve">
+    <value>APIドキュメント</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value> アラビア語</value>
+  </data>
+  <data name="BackToProfileLinkButton" xml:space="preserve">
+    <value>プロフィールに戻る</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>ビジネス</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Cellphone" xml:space="preserve">
+    <value>携帯電話</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>パスワードの変更</value>
+  </data>
+  <data name="ChangePhoto" xml:space="preserve">
+    <value>写真を変更</value>
+  </data>
+  <data name="ChangeYourPassword" xml:space="preserve">
+    <value>チェンジャーパスワード</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value> 中国人</value>
+  </data>
+  <data name="CityName" xml:space="preserve">
+    <value>シティ</value>
+  </data>
+  <data name="CivilUnion" xml:space="preserve">
+    <value>市民の結合</value>
+  </data>
+  <data name="ComingSoon" xml:space="preserve">
+    <value>すぐに来る</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>会社</value>
+  </data>
+  <data name="CompanyWebsite" xml:space="preserve">
+    <value>会社ウェブサイト</value>
+  </data>
+  <data name="ConfirmationLabel" xml:space="preserve">
+    <value>あなたのイメージを削除してもよろしいですか？</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>新しいパスワードの確認</value>
+  </data>
+  <data name="ConfirmNewPasswordRequired" xml:space="preserve">
+    <value>必要とされる新しいパスワードを確認します。</value>
+  </data>
+  <data name="ConfirmNewPasswordRequiredValidator" xml:space="preserve">
+    <value>必要とされる新しいパスワードを確認します。</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>著作権</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>カントリー</value>
+  </data>
+  <data name="CreateNewaccount" xml:space="preserve">
+    <value>新しいアカウントを作成する</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DeleteProfile" xml:space="preserve">
+    <value>プロファイルの削除</value>
+  </data>
+  <data name="DeleteProfileQuestion" xml:space="preserve">
+    <value>あなたのプロフィールを削除してもよろしいですか？</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>開発者</value>
+  </data>
+  <data name="Divorced" xml:space="preserve">
+    <value>離婚した</value>
+  </data>
+  <data name="EBlast" xml:space="preserve">
+    <value>EBlast</value>
+  </data>
+  <data name="EditProfile" xml:space="preserve">
+    <value>プロフィールを編集</value>
+  </data>
+  <data name="Eighteen" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>メールアドレス</value>
+  </data>
+  <data name="EmailAddressRegularExpressionValidator" xml:space="preserve">
+    <value>メールアドレスが無効です</value>
+  </data>
+  <data name="EmailAddressRequiredFieldValidator" xml:space="preserve">
+    <value>Eメールアドレスが必要です</value>
+  </data>
+  <data name="EmailAddressToolTip" xml:space="preserve">
+    <value>メールアドレスが無効です</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value> 英語</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>フェイスブック</value>
+  </data>
+  <data name="FacebookError" xml:space="preserve">
+    <value>有効なFacebookのURLを入力してください</value>
+  </data>
+  <data name="FailureRegistration" xml:space="preserve">
+    <value>アカウントが作成されませんでした。もう一度やり直してください。</value>
+  </data>
+  <data name="FavoritePet" xml:space="preserve">
+    <value>好きなペット</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>ファーストネーム</value>
+  </data>
+  <data name="FirstNameToolTip" xml:space="preserve">
+    <value>First Name（名）が必要です</value>
+  </data>
+  <data name="FirstNameValidator" xml:space="preserve">
+    <value>名前を入力してください</value>
+  </data>
+  <data name="Follow" xml:space="preserve">
+    <value>フォロー</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>パスワードを忘れた方</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value> フランス語</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>ジェンダー</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value> ドイツ語</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>助ける</value>
+  </data>
+  <data name="HelpUsCustomizeyourExperience" xml:space="preserve">
+    <value>連絡先あなたの体験をカスタマイズするのに役立ち</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="IndustryLabel" xml:space="preserve">
+    <value>業界</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value> 日本人</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="LastNameRequiredFieldValidator" xml:space="preserve">
+    <value>姓は必須です</value>
+  </data>
+  <data name="LastNameToolTip" xml:space="preserve">
+    <value>姓は必須です</value>
+  </data>
+  <data name="LinkedIn" xml:space="preserve">
+    <value>LinkedInの</value>
+  </data>
+  <data name="LinkedInError" xml:space="preserve">
+    <value>LinkedInの有効なURLを入力してください</value>
+  </data>
+  <data name="LoggedIn" xml:space="preserve">
+    <value>私がログインしたままに</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>男性</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="ManagePhoto" xml:space="preserve">
+    <value>写真を管理する</value>
+  </data>
+  <data name="MaritalStatus" xml:space="preserve">
+    <value>配偶者の有無</value>
+  </data>
+  <data name="Married" xml:space="preserve">
+    <value>結婚した</value>
+  </data>
+  <data name="MobilePhoneNumber" xml:space="preserve">
+    <value>携帯電話番号</value>
+  </data>
+  <data name="MobilePhoneRegularExpressionValidator" xml:space="preserve">
+    <value>任意hyphonsまたはセミコロンなしで数字を入力します（1231231234）</value>
+  </data>
+  <data name="MobilePhoneToolTip" xml:space="preserve">
+    <value>任意hyphonsまたはセミコロンなしで数字を入力します（1231231234）</value>
+  </data>
+  <data name="MotherMaidenName" xml:space="preserve">
+    <value>母親の旧姓</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>新パスワード：</value>
+  </data>
+  <data name="NewPasswordCharacter" xml:space="preserve">
+    <value>文字の長さ。</value>
+  </data>
+  <data name="NewPasswordMessage" xml:space="preserve">
+    <value>新しいパスワードは、最低であることが要求される</value>
+  </data>
+  <data name="NewPasswordRequired" xml:space="preserve">
+    <value>新しいパスワードが必要です。</value>
+  </data>
+  <data name="Newsletter" xml:space="preserve">
+    <value>ニュースレター</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>古いパスワード：</value>
+  </data>
+  <data name="OldPasswordRequired" xml:space="preserve">
+    <value>古いパスワードが必要です。</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Password1" xml:space="preserve">
+    <value>パスワード：</value>
+  </data>
+  <data name="PasswordChangeSuccess" xml:space="preserve">
+    <value>パスワードが正常に変更されました。</value>
+  </data>
+  <data name="PasswordMatchMessage" xml:space="preserve">
+    <value>パスワードと確認用パスワードが一致しなければなりません。</value>
+  </data>
+  <data name="PasswordRecoveryUrl" xml:space="preserve">
+    <value>EmailTemplates /PasswordRecoveryJa.htm</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>パスワードが必要です。</value>
+  </data>
+  <data name="PasswordRequiredValidator" xml:space="preserve">
+    <value>パスワードが必要です。</value>
+  </data>
+  <data name="PasswordSent" xml:space="preserve">
+    <value>パスワードがあなたのメールアドレスに送信されました</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>プライバシー</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>製品</value>
+  </data>
+  <data name="Profession" xml:space="preserve">
+    <value>職業</value>
+  </data>
+  <data name="ProfileInformation" xml:space="preserve">
+    <value>プロファイル情報</value>
+  </data>
+  <data name="ProjectRequirementContentSizeLabel" xml:space="preserve">
+    <value>ファイルサイズは4MB未満でなければなりません</value>
+  </data>
+  <data name="ProjectRequirementContentTypeLabel" xml:space="preserve">
+    <value>画像のみが許可されています：（JEPG、GIF、PNG、BMP、TIFF）</value>
+  </data>
+  <data name="RecoverYourPassword" xml:space="preserve">
+    <value>パスワードを回復</value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>国家/地域</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value> ロシア</value>
+  </data>
+  <data name="SecurityAnswer" xml:space="preserve">
+    <value>安全保障に関する答え</value>
+  </data>
+  <data name="SecurityAnswerRequired" xml:space="preserve">
+    <value>セキュリティ回答が必要です。</value>
+  </data>
+  <data name="SecurityAnswerToolTip" xml:space="preserve">
+    <value>セキュリティ回答が必要です。</value>
+  </data>
+  <data name="SecurityQuestionLabel" xml:space="preserve">
+    <value>セキュリティの質問</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="SendAnswerByMail" xml:space="preserve">
+    <value>メールで回答を送信</value>
+  </data>
+  <data name="Separated" xml:space="preserve">
+    <value>分離した</value>
+  </data>
+  <data name="Single" xml:space="preserve">
+    <value>シングル</value>
+  </data>
+  <data name="SiteMap" xml:space="preserve">
+    <value>サイトマップ</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value> スペイン語</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>購読する</value>
+  </data>
+  <data name="Subscription" xml:space="preserve">
+    <value>サブスクリプション</value>
+  </data>
+  <data name="SuccessfulRegistration" xml:space="preserve">
+    <value>アカウントが正常に作成されました。</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>ツイッター</value>
+  </data>
+  <data name="TwitterError" xml:space="preserve">
+    <value>有効なTwitterのURLを入力してください</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>アップデート</value>
+  </data>
+  <data name="UseFormMessage" xml:space="preserve">
+    <value>パスワードを変更するには、下記のフォームをご使用下さい。</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="UserName1" xml:space="preserve">
+    <value>ユーザー名：</value>
+  </data>
+  <data name="UserNameRequiredFieldValidator" xml:space="preserve">
+    <value>ユーザー名は必須です。</value>
+  </data>
+  <data name="ValidEmail" xml:space="preserve">
+    <value>正しいメールアドレスを入力してください</value>
+  </data>
+  <data name="ValidURL" xml:space="preserve">
+    <value>有効なURLを入力してください</value>
+  </data>
+  <data name="ViewProfile" xml:space="preserve">
+    <value>プロフィールを見る</value>
+  </data>
+  <data name="Whowasyourchildhoodhero" xml:space="preserve">
+    <value>あなたの子供の頃のヒーローは誰でしたか？</value>
+  </data>
+  <data name="Widowed" xml:space="preserve">
+    <value>夫と死別した</value>
+  </data>
+  <data name="Yourfavoritepasttime" xml:space="preserve">
+    <value>あなたの好きなpasttime？</value>
+  </data>
+  <data name="Yourfirstcar" xml:space="preserve">
+    <value>あなたの最初の車？</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="RecoverySentMessage" xml:space="preserve">
+    <value>あなたのパスワード回復を送信しました。メールを確認してください。ありがとう。</value>
+  </data>
+  <data name="AdvertiseManagement" xml:space="preserve">
+    <value>管理に広告を掲載する</value>
+  </data>
+  <data name="Thisemailconfirmsthatyourpasswordhasbeenchanged" xml:space="preserve">
+    <value>この電子メールは、あなたのパスワードが変更されたことを確認します。</value>
+  </data>
+  <data name="Tologonto" xml:space="preserve">
+    <value>にログオンするには</value>
+  </data>
+  <data name="usethefollowingcredentials" xml:space="preserve">
+    <value>、次の資格情報を使用します。
+ &lt;/p&gt;</value>
+  </data>
+  <data name="YourPasswordHasBeenReset" xml:space="preserve">
+    <value>あなたのパスワードはリセットされました！</value>
+  </data>
+  <data name="Thankyou" xml:space="preserve">
+    <value>ありがとう。</value>
+  </data>
+</root>

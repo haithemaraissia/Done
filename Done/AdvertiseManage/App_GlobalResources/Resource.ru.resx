@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUS" xml:space="preserve">
+    <value>О компании</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Счет</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>Информация об учетной записи</value>
+  </data>
+  <data name="Advertise" xml:space="preserve">
+    <value>Рекламировать</value>
+  </data>
+  <data name="Advertiser" xml:space="preserve">
+    <value>Рекламодатель</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Возраст</value>
+  </data>
+  <data name="AgeLimitation" xml:space="preserve">
+    <value>Возраст должна быть между 18 и 105</value>
+  </data>
+  <data name="AgeRequiredFieldValidator" xml:space="preserve">
+    <value>Возраст требуется</value>
+  </data>
+  <data name="AnswerPasswordQuestion" xml:space="preserve">
+    <value>Пожалуйста, ответьте пароль вопроса:</value>
+  </data>
+  <data name="APIDocumentation" xml:space="preserve">
+    <value>Документация по API</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value> Арабский</value>
+  </data>
+  <data name="BackToProfileLinkButton" xml:space="preserve">
+    <value>Вернуться к странице</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>Бизнес</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="Cellphone" xml:space="preserve">
+    <value>Мобильный телефон</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="ChangePhoto" xml:space="preserve">
+    <value>Изменить фото</value>
+  </data>
+  <data name="ChangeYourPassword" xml:space="preserve">
+    <value>Changer пароль</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value> Китайский</value>
+  </data>
+  <data name="CityName" xml:space="preserve">
+    <value>Сити</value>
+  </data>
+  <data name="CivilUnion" xml:space="preserve">
+    <value>Гражданский союз</value>
+  </data>
+  <data name="ComingSoon" xml:space="preserve">
+    <value>Скоро</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Компания</value>
+  </data>
+  <data name="CompanyWebsite" xml:space="preserve">
+    <value>Веб-сайт компании</value>
+  </data>
+  <data name="ConfirmationLabel" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить свой имидж?</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Подтвердите новый пароль</value>
+  </data>
+  <data name="ConfirmNewPasswordRequired" xml:space="preserve">
+    <value>Подтвердите новый пароль не требуется.</value>
+  </data>
+  <data name="ConfirmNewPasswordRequiredValidator" xml:space="preserve">
+    <value>Подтвердите новый пароль не требуется.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Связаться с Нами</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Авторское право</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="CreateNewaccount" xml:space="preserve">
+    <value>Создать новую учетную запись</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалять</value>
+  </data>
+  <data name="DeleteProfile" xml:space="preserve">
+    <value>Удалить профиль</value>
+  </data>
+  <data name="DeleteProfileQuestion" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить свой профиль?</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>Разработчик</value>
+  </data>
+  <data name="Divorced" xml:space="preserve">
+    <value>Разведенный</value>
+  </data>
+  <data name="EBlast" xml:space="preserve">
+    <value>EBlast</value>
+  </data>
+  <data name="EditProfile" xml:space="preserve">
+    <value>Изменить профиль</value>
+  </data>
+  <data name="Eighteen" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="EmailAddressRegularExpressionValidator" xml:space="preserve">
+    <value>Адрес электронной почты является недействительным</value>
+  </data>
+  <data name="EmailAddressRequiredFieldValidator" xml:space="preserve">
+    <value>Адрес электронной почты необходимо</value>
+  </data>
+  <data name="EmailAddressToolTip" xml:space="preserve">
+    <value>Адрес электронной почты является недействительным</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value> Английский</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="FacebookError" xml:space="preserve">
+    <value>Пожалуйста, введите действительный URL Facebook</value>
+  </data>
+  <data name="FailureRegistration" xml:space="preserve">
+    <value>Счет не был создан. Пожалуйста, попробуйте еще раз.</value>
+  </data>
+  <data name="FavoritePet" xml:space="preserve">
+    <value>Любимое домашнее животное</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Женщина</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="FirstNameToolTip" xml:space="preserve">
+    <value>Имя требуется</value>
+  </data>
+  <data name="FirstNameValidator" xml:space="preserve">
+    <value>Введите ваше имя</value>
+  </data>
+  <data name="Follow" xml:space="preserve">
+    <value>Следить</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Забыли пароль?</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value> Французский</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value> Немецкий</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Помогите</value>
+  </data>
+  <data name="HelpUsCustomizeyourExperience" xml:space="preserve">
+    <value>Помогите настроить вашего опыта</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Дома</value>
+  </data>
+  <data name="IndustryLabel" xml:space="preserve">
+    <value>Промышленность</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value> Японский</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="LastNameRequiredFieldValidator" xml:space="preserve">
+    <value>Фамилия требуется</value>
+  </data>
+  <data name="LastNameToolTip" xml:space="preserve">
+    <value>Фамилия требуется</value>
+  </data>
+  <data name="LinkedIn" xml:space="preserve">
+    <value>LinkedIn</value>
+  </data>
+  <data name="LinkedInError" xml:space="preserve">
+    <value>Пожалуйста, введите действительный URL LinkedIn</value>
+  </data>
+  <data name="LoggedIn" xml:space="preserve">
+    <value>Запомнить меня</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Войдите</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Мужчина</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="ManagePhoto" xml:space="preserve">
+    <value>Управление Фото</value>
+  </data>
+  <data name="MaritalStatus" xml:space="preserve">
+    <value>Семейное положение</value>
+  </data>
+  <data name="Married" xml:space="preserve">
+    <value>Замужем</value>
+  </data>
+  <data name="MobilePhoneNumber" xml:space="preserve">
+    <value>Номер мобильного телефона</value>
+  </data>
+  <data name="MobilePhoneRegularExpressionValidator" xml:space="preserve">
+    <value>Введите цифры, без hyphons или точку с запятой (1231231234)</value>
+  </data>
+  <data name="MobilePhoneToolTip" xml:space="preserve">
+    <value>Введите цифры, без hyphons или точку с запятой (1231231234)</value>
+  </data>
+  <data name="MotherMaidenName" xml:space="preserve">
+    <value>Девичья фамилия матери</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Новый пароль:</value>
+  </data>
+  <data name="NewPasswordCharacter" xml:space="preserve">
+    <value>символов в длину.</value>
+  </data>
+  <data name="NewPasswordMessage" xml:space="preserve">
+    <value>Новые пароли должны быть не менее</value>
+  </data>
+  <data name="NewPasswordRequired" xml:space="preserve">
+    <value>Новый пароль не требуется.</value>
+  </data>
+  <data name="Newsletter" xml:space="preserve">
+    <value>Информационный бюллетень</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Старый пароль:</value>
+  </data>
+  <data name="OldPasswordRequired" xml:space="preserve">
+    <value>Старый пароль не требуется.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="Password1" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="PasswordChangeSuccess" xml:space="preserve">
+    <value>Ваш пароль был успешно изменен.</value>
+  </data>
+  <data name="PasswordMatchMessage" xml:space="preserve">
+    <value>Пароль и подтверждение пароля должны совпадать.</value>
+  </data>
+  <data name="PasswordRecoveryUrl" xml:space="preserve">
+    <value>EmailTemplates/PasswordRecoveryRu.htm</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Пароль не требуется.</value>
+  </data>
+  <data name="PasswordRequiredValidator" xml:space="preserve">
+    <value>Пароль не требуется.</value>
+  </data>
+  <data name="PasswordSent" xml:space="preserve">
+    <value>Ваш пароль был отправлен на ваш адрес электронной почты</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Конфиденциальность</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
+  <data name="Profession" xml:space="preserve">
+    <value>Профессия</value>
+  </data>
+  <data name="ProfileInformation" xml:space="preserve">
+    <value>Информация профиля</value>
+  </data>
+  <data name="ProjectRequirementContentSizeLabel" xml:space="preserve">
+    <value>Размер файла должно быть не менее 4 МБ</value>
+  </data>
+  <data name="ProjectRequirementContentTypeLabel" xml:space="preserve">
+    <value>Только изображения могут: (JEPG, GIF, PNG, BMP, TIFF)</value>
+  </data>
+  <data name="RecoverYourPassword" xml:space="preserve">
+    <value>Восстановить пароль</value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>Штат / Регион</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value> Русский</value>
+  </data>
+  <data name="SecurityAnswer" xml:space="preserve">
+    <value>Ответ на контрольный вопрос</value>
+  </data>
+  <data name="SecurityAnswerRequired" xml:space="preserve">
+    <value>Безопасность ответа не требуется.</value>
+  </data>
+  <data name="SecurityAnswerToolTip" xml:space="preserve">
+    <value>Безопасность ответа не требуется.</value>
+  </data>
+  <data name="SecurityQuestionLabel" xml:space="preserve">
+    <value>Контрольный вопрос</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Послать</value>
+  </data>
+  <data name="SendAnswerByMail" xml:space="preserve">
+    <value>Отправить ответ По почте</value>
+  </data>
+  <data name="Separated" xml:space="preserve">
+    <value>Разделенный</value>
+  </data>
+  <data name="Single" xml:space="preserve">
+    <value>Один</value>
+  </data>
+  <data name="SiteMap" xml:space="preserve">
+    <value>Карта сайта</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value> Испанский</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Подписываться</value>
+  </data>
+  <data name="Subscription" xml:space="preserve">
+    <value>Подписка</value>
+  </data>
+  <data name="SuccessfulRegistration" xml:space="preserve">
+    <value>Учетная запись была успешно создана.</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>Щебетать</value>
+  </data>
+  <data name="TwitterError" xml:space="preserve">
+    <value>Пожалуйста, введите действительный URL Twitter</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="UseFormMessage" xml:space="preserve">
+    <value>Используйте форму ниже, чтобы изменить свой пароль.</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="UserName1" xml:space="preserve">
+    <value>Имя пользователя:</value>
+  </data>
+  <data name="UserNameRequiredFieldValidator" xml:space="preserve">
+    <value>Имя пользователя не требуется.</value>
+  </data>
+  <data name="ValidEmail" xml:space="preserve">
+    <value>Пожалуйста, введите правильный адрес электронной почты</value>
+  </data>
+  <data name="ValidURL" xml:space="preserve">
+    <value>Пожалуйста, введите действительный URL</value>
+  </data>
+  <data name="ViewProfile" xml:space="preserve">
+    <value>Просмотр профиля</value>
+  </data>
+  <data name="Whowasyourchildhoodhero" xml:space="preserve">
+    <value>Кто был вашим героем детства?</value>
+  </data>
+  <data name="Widowed" xml:space="preserve">
+    <value>Овдовевший</value>
+  </data>
+  <data name="Yourfavoritepasttime" xml:space="preserve">
+    <value>Ваш любимый pasttime?</value>
+  </data>
+  <data name="Yourfirstcar" xml:space="preserve">
+    <value>Ваш первый автомобиль?</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>Почтовый индекс</value>
+  </data>
+  <data name="RecoverySentMessage" xml:space="preserve">
+    <value>Ваша Password Recovery было отправлено. Пожалуйста, проверьте свою электронную почту. Спасибо.</value>
+  </data>
+  <data name="AdvertiseManagement" xml:space="preserve">
+    <value>Реклама управление</value>
+  </data>
+  <data name="Thisemailconfirmsthatyourpasswordhasbeenchanged" xml:space="preserve">
+    <value>Данное письмо подтверждает, что ваш пароль был изменен.</value>
+  </data>
+  <data name="Tologonto" xml:space="preserve">
+    <value>Чтобы войти в</value>
+  </data>
+  <data name="usethefollowingcredentials" xml:space="preserve">
+    <value>, Используйте следующие полномочия:</value>
+  </data>
+  <data name="YourPasswordHasBeenReset" xml:space="preserve">
+    <value>Ваш пароль был сброшен!</value>
+  </data>
+  <data name="ThankYou" xml:space="preserve">
+    <value>Спасибо.</value>
+  </data>
+</root>
